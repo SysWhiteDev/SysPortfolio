@@ -6,6 +6,9 @@
 </a>
 &nbsp;
 <div align="center">
+
+[![checks](https://github.com/SysWhiteDev/SysPortfolio/actions/workflows/checks.yml/badge.svg)](https://github.com/SysWhiteDev/SysPortfolio/actions/workflows/checks.yml)
+
 </div>
 
 ## Table of content
