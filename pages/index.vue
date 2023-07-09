@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="fullscreen">
-      <p class="title">Hi, i am <u>sys</u></p>
+      <p class="title">Hi, I am <u>sys</u></p>
       <p class="subtitle">⚡ this website is still being built ⚡</p>
     </div>
   </div>

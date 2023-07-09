@@ -41,8 +41,13 @@ export default {
   },
   watch: {
     "store.theme"(newTheme, oldTheme) {
-      this.htmlElement.classList.remove(oldTheme);
-      this.htmlElement.classList.add(newTheme);
+      this.htmlElement.classList.add("transitioning");
+
+      setTimeout(() => {
+        this.htmlElement.classList.remove(oldTheme);
+        this.htmlElement.classList.add(newTheme);
+        this.htmlElement.classList.remove("transitioning");
+      }, 800);
     },
   },
   methods: {
