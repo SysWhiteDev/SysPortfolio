@@ -64,3 +64,22 @@ body {
   color: white;
   font-size: 32px;
 }
+
+/* scrollbar */
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #CBCBCB;
+  border-radius: 7px;
+  outline: #3b3b3b 5px solid;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #909090;
+}
