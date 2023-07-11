@@ -25,18 +25,17 @@
 
 /* title */
 .title {
-    color: white;
-    text-align: center;
-    font-size: clamp(60px, 15vw, 120px);
+  color: white;
+  text-align: center;
+  font-size: clamp(60px, 15vw, 120px);
 }
 
 .subtitle {
-    text-align: center;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.193);
-    border-radius: 10px;
-    color: white;
-    font-size: clamp(15px, 2vw, 30px);
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.193);
+  border-radius: 10px;
+  color: white;
+  font-size: clamp(15px, 2vw, 30px);
 }
 </style>
-
