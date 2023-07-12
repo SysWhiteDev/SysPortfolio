@@ -78,46 +78,51 @@ onMounted(() => {
 
   const isInViewport = (el) => {
     const rect = el.getBoundingClientRect();
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth =
+      window.innerWidth || document.documentElement.clientWidth;
+
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      rect.top <= windowHeight &&
+      rect.left <= windowWidth &&
+      rect.bottom >= 0 &&
+      rect.right >= 0
     );
   };
+
+  const fadeinElements = document.querySelectorAll(".fadein");
+
   setInterval(() => {
-    const fadeinElements = document.querySelectorAll(".fadein");
     fadeinElements.forEach((element) => {
       if (isInViewport(element)) {
         fadeinActive.value = true;
         element.classList.add("fadein-active");
       } else {
-        // element.classList.remove('fadein-active');
+        // fadeinActive.value = false;
+        // element.classList.remove("fadein-active");
       }
     });
   }, 100);
 
   const handleScroll = () => {
-    const fadeinElements = document.querySelectorAll(".fadein");
     fadeinElements.forEach((element) => {
       if (isInViewport(element)) {
         fadeinActive.value = true;
         element.classList.add("fadein-active");
       } else {
-        // element.classList.remove('fadein-active');
+        fadeinActive.value = false;
+        element.classList.remove("fadein-active");
       }
     });
   };
 
   const handleVisibilityChange = () => {
     if (!document.hidden) {
-      fadeinActive.value = false;
       handleScroll();
     }
   };
 
-  window.addEventListener("scroll", handleScroll);
   document.addEventListener("visibilitychange", handleVisibilityChange);
 
   handleScroll();
