@@ -8,45 +8,48 @@ export default {
     return {
       word: "frontend developer",
       wordList: ["frontend developer", "backend developer", "designer"],
-      index: 0,
+      index: 1,
+      timerId: null,
     };
   },
   mounted() {
-    // setInterval(() => {
-    //   console.log(this.word.length)
-    //   const calculatedWaitTime = this.word.length * 300;
-    //   // delete old word
-    //   if (this.index == 0) {
-    //     for (let i = 0; i < this.wordList[this.index].length; i++) {
-    //       setTimeout(() => {
-    //         this.word = this.word.slice(0, -1);
-    //       }, 300 * (i + 1));
-    //     }
-    //   } else {
-    //     for (let i = 0; i < this.wordList[this.index - 1].length; i++) {
-    //       setTimeout(() => {
-    //         this.word = this.word.slice(0, -1);
-    //       }, 300 * (i + 1));
-    //     }
-    //   }
-
-      
-    //   setTimeout(() => {
-    //     return;
-    //   }, calculatedWaitTime);
-
-    //   // insert new word
-    //   for (let i = 0; i < this.wordList[this.index].length; i++) {
-    //     this.word = this.word + this.wordList[this.index][i];
-    //   }
-
-    //   // reset the counter or increase it
-    //   if (this.index < this.wordList.length - 1) {
-    //     this.index++;
-    //   } else {
-    //     this.index = 0;
-    //   }
-    // }, 2000);
+    this.startTypewriter();
+  },
+  beforeUnmount() {
+    clearTimeout(this.timerId);
+  },
+  methods: {
+    startTypewriter() {
+      this.timerId = setTimeout(() => {
+        this.deleteWord();
+      }, 2000);
+    },
+    deleteWord() {
+      const wordLength = this.word.length;
+      if (wordLength > 0) {
+        this.word = this.word.slice(0, wordLength - 1);
+        this.timerId = setTimeout(() => {
+          this.deleteWord();
+        }, 200);
+      } else {
+        this.insertWord();
+      }
+    },
+    insertWord() {
+      const targetWord = this.wordList[this.index];
+      const targetLength = targetWord.length;
+      if (this.word.length < targetLength) {
+        this.word = targetWord.slice(0, this.word.length + 1);
+        this.timerId = setTimeout(() => {
+          this.insertWord();
+        }, 200);
+      } else {
+        this.index = (this.index + 1) % this.wordList.length;
+        this.timerId = setTimeout(() => {
+          this.startTypewriter();
+        }, 2000);
+      }
+    },
   },
 };
 </script>
