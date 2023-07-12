@@ -12,9 +12,10 @@ export default {
   methods: {
     getCursor(event) {
       const mousepos = document.getElementById("mousepos");
-      console.log(`X: ${event.x} Y: ${event.y}`);
-      mousepos.style.top = `${event.y}px`;
-      mousepos.style.left = `${event.x}px`;
+      setTimeout(() => {
+        mousepos.style.top = `${event.y}px`;
+        mousepos.style.left = `${event.x}px`;
+      }, 100);
     },
   },
 };
@@ -56,7 +57,7 @@ export default {
   height: 500px;
   background: radial-gradient(
     circle at center,
-    #d548cf 0%,
+    #ffffff1f 0%,
     rgba(255, 255, 255, 0) 10%
   );
   pointer-events: none;
