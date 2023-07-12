@@ -1,0 +1,8 @@
+.fadein {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fadein-active {
+    opacity: 1;
+}

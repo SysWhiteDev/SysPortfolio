@@ -2,7 +2,7 @@
   <div @mousemove="getCursor($event)" class="wrapper">
     <div id="mousepos" />
     <NuxtLayout name="navbar">
-      <NuxtPage />
+      <NuxtPage class="page"/>
     </NuxtLayout>
   </div>
 </template>
@@ -48,6 +48,9 @@ export default {
   }
   #mousepos {
     display: none;
+  }
+  .page {
+    padding-bottom: 100px;
   }
 }
 

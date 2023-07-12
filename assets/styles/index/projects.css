@@ -20,7 +20,8 @@
   font-family: "JetBrains mono";
   font-size: clamp(40px, 5vw, 60px);
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* prj container */
@@ -30,6 +31,7 @@
   overflow-x: auto;
   display: flex;
   overflow-y: hidden;
+  margin-bottom: 20px;
 }
 
 .prjcontainer > * {
@@ -38,8 +40,27 @@
   white-space: nowrap;
 }
 
+.prjcontainer > *:nth-child(1) {
+  transition-property: opacity, transform;
+  transition-delay: 0.1s, 0s;
+}
+.prjcontainer > *:nth-child(2) {
+  transition-property: opacity, transform;
+  transition-delay: 0.2s, 0s;
+}
+.prjcontainer > *:nth-child(3) {
+  transition-property: opacity, transform;
+  transition-delay: 0.3s, 0s;
+}
+.prjcontainer > *:nth-child(4) {
+  transition-property: opacity, transform;
+  transition-delay: 0.4s, 0s;
+}
+
 /* prj tile */
 .prjtile {
+  position: relative;
+  z-index: 0;
   height: 350px;
   width: 400px;
   background-color: rgb(39, 39, 42);
@@ -49,14 +70,16 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.056);
-  transition: all 0.2s;
+  transition-property: opacity, transform;
+  transition-duration: 0.2s;
 }
 
 .prjtile:first-child {
-    margin-left: 20px;
+  margin-left: 20px;
 }
+
 :root.dark .prjtile {
   background-color: rgb(221, 221, 221);
 }
@@ -75,10 +98,12 @@
 .prjdata {
   padding: 15px;
   max-width: 400px;
+  height: 100px;
   padding-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 10px;
   flex-shrink: 0;
   flex-grow: 0;
   white-space: normal;
@@ -95,10 +120,52 @@
 .prjdtitle {
   color: white;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .prjddesc {
   color: rgb(205, 205, 205);
   font-size: 15px;
+}
+
+/* prj more */
+.prjmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.prjmore > p {
+  margin-top: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+:root.dark .prjmore > p {
+  color: black;
+}
+.iconwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.123);
+  width: 80px;
+  height: 80px;
+}
+
+:root.dark .iconwrap {
+  background-color: rgba(0, 0, 0, 0.123);
+}
+
+.iconwrap > i {
+  font-size: 40px;
+  color: white;
+}
+
+:root.dark .iconwrap > i {
+  color: black;
 }
