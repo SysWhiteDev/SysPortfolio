@@ -91,9 +91,10 @@ onMounted(() => {
     );
   };
 
-  const fadeinElements = document.querySelectorAll(".fadein");
+  
 
   setInterval(() => {
+    const fadeinElements = Array.from(document.getElementsByClassName("fadein"));
     fadeinElements.forEach((element) => {
       if (isInViewport(element)) {
         fadeinActive.value = true;
@@ -105,18 +106,6 @@ onMounted(() => {
     });
   }, 100);
 
-  const handleScroll = () => {
-    fadeinElements.forEach((element) => {
-      if (isInViewport(element)) {
-        fadeinActive.value = true;
-        element.classList.add("fadein-active");
-      } else {
-        fadeinActive.value = false;
-        element.classList.remove("fadein-active");
-      }
-    });
-  };
-
   const handleVisibilityChange = () => {
     if (!document.hidden) {
       handleScroll();
@@ -124,8 +113,6 @@ onMounted(() => {
   };
 
   document.addEventListener("visibilitychange", handleVisibilityChange);
-
-  handleScroll();
 });
 </script>
 
