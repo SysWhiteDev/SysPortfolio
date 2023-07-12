@@ -1,5 +1,11 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+@font-face {
+  font-family: "JetBrains mono";
+  src: url("~/assets/fonts/JetBrainsMono-Regular.ttf");
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;

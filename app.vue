@@ -35,16 +35,16 @@ export default {
 
 .wrapper {
   position: absolute;
-  top: 100px;
-  right: 20px;
-  left: 20px;
-  bottom: 20px;
+  top: 80px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
 }
 
 /* mobile */
 @media (max-width: 500px) {
   .wrapper {
-    top: 20px;
+    top: 0px;
   }
   #mousepos {
     display: none;
@@ -57,7 +57,7 @@ export default {
   height: 500px;
   background: radial-gradient(
     circle at center,
-    #ffffff1f 0%,
+    #0000001f 0%,
     rgba(255, 255, 255, 0) 10%
   );
   pointer-events: none;
@@ -65,5 +65,13 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+}
+
+:root.dark #mousepos {
+  background: radial-gradient(
+    circle at center,
+    #ffffff1f 0%,
+    rgba(255, 255, 255, 0) 10%
+  );
 }
 </style>
