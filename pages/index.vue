@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: calc(100vh - 40px);
 }
 
@@ -23,6 +23,7 @@
 @media (min-width: 500px) {
   .fullscreen {
     height: calc(100vh - 120px);
+    align-items: center;
   }
 }
 
