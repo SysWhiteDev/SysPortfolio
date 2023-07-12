@@ -4,7 +4,7 @@
       <div class="titlediv">
         <p style="font-family: 'Roboto Mono', monospace; font-size: clamp(10px, 15vw, 20px);">Hi, my name is</p>
         <p class="title">SysWhite </p>
-        <p style="font-size: clamp(15px, 8vw, 35px); color: #ffffffcc;">I'm a <u style="color: white;"><HomeScrollingWords/></u></p>
+        <p style="font-size: clamp(15px, 8vw, 35px);">I'm a <u><HomeScrollingWords/></u></p>
       </div>
     </div>
   </div>
@@ -29,15 +29,22 @@
 /* title */
 
 .titlediv > * {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+:root.dark .titlediv > * {
+  color: rgb(255, 255, 255);
 }
 .title {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: left;
   font-size: clamp(60px, 15vw, 120px);
   font-weight: bold;
 }
 
+:root.dark .title {
+  color: white;
+}
 /* subbutton */
 .subsection {
   background-color: rgba(0, 0, 0, 0.193);

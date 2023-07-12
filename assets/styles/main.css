@@ -4,60 +4,37 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
+  color: black;
 }
 
+:root.dark * {
+  color: white;
+}
 body {
   margin: 0;
   padding: 20px;
 }
 
 :root {
-  background: linear-gradient(
-    106.5deg,
-    rgba(135, 114, 99, 0.91) 20%,
-    rgba(132, 96, 146, 0.8) 80%
-  );
+  background: rgb(202, 202, 202);
+  transition: 0.4s all;
 }
 
 :root.dark {
-  background: linear-gradient(106.5deg, #b14e30, #752142);
+  background: rgb(32, 32, 32);
 }
 
-:root::before {
-  transition: all 0.4s ease-in-out;
-  content: "";
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-:root.transitioning::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 1;
-  background-color: #2f2f38;
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 
 /* temp */
 .temptitle {
-  border-left: 4px white solid;
+  border-left: 4px black solid;
   padding-left: 10px;
-  color: white;
   font-size: 32px;
 }
 
+:root.dark .temptitle {
+  border-left-color: white;
+}
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
