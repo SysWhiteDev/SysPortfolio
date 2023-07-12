@@ -15,6 +15,29 @@
           I'm a <u><HomeScrollingWords /></u>
         </p>
       </div>
+      <div class="socials">
+        <a
+          target="_blank"
+          href="https://github.com/SysWhiteDev/"
+          class="social"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://discord.com/invite/gFnwC3EM"
+          class="social"
+        >
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a
+          target="_blank"
+          href="mailto:syswhite.commercial@gmail.com"
+          class="social"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
     </div>
     <div class="projects">
       <p class="prjtitle fadein">&lt;My projects&gt;</p>
@@ -91,10 +114,10 @@ onMounted(() => {
     );
   };
 
-  
-
   setInterval(() => {
-    const fadeinElements = Array.from(document.getElementsByClassName("fadein"));
+    const fadeinElements = Array.from(
+      document.getElementsByClassName("fadein")
+    );
     fadeinElements.forEach((element) => {
       if (isInViewport(element)) {
         fadeinActive.value = true;
