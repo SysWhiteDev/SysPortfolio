@@ -5,7 +5,7 @@
 }
 
 :root.dark .projects {
-  background-color: rgb(200, 200, 200);
+  background-color: #53204d;
 }
 
 .projects > * {
@@ -13,7 +13,7 @@
 }
 
 :root.dark .projects > * {
-  color: black;
+  /* color: black; */
 }
 /* title */
 .prjtitle {
@@ -81,7 +81,7 @@
 }
 
 :root.dark .prjtile {
-  background-color: rgb(221, 221, 221);
+  /* background-color: rgb(221, 221, 221); */
 }
 
 .prjtile:hover {
@@ -114,7 +114,7 @@
 }
 
 :root.dark .prjdata > * {
-  color: black;
+  /* color: black; */
 }
 
 .prjdtitle {
@@ -145,7 +145,7 @@
 }
 
 :root.dark .prjmore > p {
-  color: black;
+  /* color: black; */
 }
 .iconwrap {
   display: flex;
@@ -167,5 +167,5 @@
 }
 
 :root.dark .iconwrap > i {
-  color: black;
+  /* color: black; */
 }
