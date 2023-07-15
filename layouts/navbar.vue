@@ -3,8 +3,8 @@
     <div class="navwrap">
       <NuxtLink to="/" class="navlogo">S</NuxtLink>
       <div class="links">
-        <NuxtLink to="/about" class="link">About me</NuxtLink>
         <NuxtLink to="/projects" class="link">Projects</NuxtLink>
+        <NuxtLink to="/hackathons" class="link">Hackathons</NuxtLink>
       </div>
       <!-- <i class="fas fa-flag"></i> -->
       <div class="themeChooser" @click="!themeSwitching && changeTheme()">

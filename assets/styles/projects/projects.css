@@ -1,0 +1,14 @@
+.nodata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(15px, 4vw, 20px);
+}
+
+.nodata > p{
+    font-family: "JetBrains mono";
+}
+
+.nodata > i {
+    margin-right: 10px;
+}

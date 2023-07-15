@@ -140,7 +140,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@import url("~/assets/styles/index/index.css");
 @import url("~/assets/styles/index/title.css");
 @import url("~/assets/styles/index/projects.css");
+@import url("~/assets/styles/index/index.css");
 </style>
