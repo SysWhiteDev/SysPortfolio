@@ -17,12 +17,13 @@
 .searchbar > input {
   flex: 1;
   outline: none;
+  min-width: 0;
   border: none;
   border-radius: 7px;
   font-size: 20px;
   color: black;
   position: relative;
-  background: none
+  background: none;
 }
 
 :root.dark .searchbar > input {
@@ -30,5 +31,5 @@
 }
 
 .searchbar > i {
-    pointer-events: none;
+  pointer-events: none;
 }
