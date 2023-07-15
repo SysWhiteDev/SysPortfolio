@@ -5,7 +5,6 @@
     </div>
     <div class="searchbar">
       <input type="text" placeholder="Search..." />
-      <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div class="nodata">
         <i class="fa-solid fa-triangle-exclamation"></i>
