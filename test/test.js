@@ -8,8 +8,8 @@ describe("Endpoint tests", () => {
     expect(response.status).toBe(200);
   });
 
-  it("GET /about should respond with status code 200", async () => {
-    const response = await axios.get("http://localhost:3000/about");
+  it("GET /hackathons should respond with status code 200", async () => {
+    const response = await axios.get("http://localhost:3000/hackathons");
     expect(response.status).toBe(200);
   });
 
