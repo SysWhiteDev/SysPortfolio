@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     font-size: clamp(15px, 4vw, 20px);
+    box-sizing: border-box;
 }
 
 .nodata > p{

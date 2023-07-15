@@ -1,7 +1,6 @@
 .searchbar {
   margin: 20px;
   display: flex;
-  transform: translateY(-30px);
   flex: 1;
   outline: none;
   border: none;
