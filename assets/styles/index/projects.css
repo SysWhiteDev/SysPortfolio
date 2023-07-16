@@ -40,21 +40,23 @@
   white-space: nowrap;
 }
 
-.prjcontainer > *:nth-child(1) {
-  transition-property: opacity, transform;
-  transition-delay: 0.1s, 0s;
-}
-.prjcontainer > *:nth-child(2) {
-  transition-property: opacity, transform;
-  transition-delay: 0.2s, 0s;
-}
-.prjcontainer > *:nth-child(3) {
-  transition-property: opacity, transform;
-  transition-delay: 0.3s, 0s;
-}
-.prjcontainer > *:nth-child(4) {
-  transition-property: opacity, transform;
-  transition-delay: 0.4s, 0s;
+@media (min-width: 500px) {
+  .prjcontainer > *:nth-child(1) {
+    transition-property: opacity, transform;
+    transition-delay: 0.1s, 0s;
+  }
+  .prjcontainer > *:nth-child(2) {
+    transition-property: opacity, transform;
+    transition-delay: 0.2s, 0s;
+  }
+  .prjcontainer > *:nth-child(3) {
+    transition-property: opacity, transform;
+    transition-delay: 0.3s, 0s;
+  }
+  .prjcontainer > *:nth-child(4) {
+    transition-property: opacity, transform;
+    transition-delay: 0.4s, 0s;
+  }
 }
 
 /* prj tile */
