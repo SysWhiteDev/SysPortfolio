@@ -90,6 +90,57 @@
         </NuxtLink>
       </div>
     </div>
+    <div class="hackathons">
+      <p class="haktitle fadein" style="text-align: right;">&lt;hackathons&gt;</p>
+      <div class="hakcontainer">
+        <div class="haktile fadein">
+          <img
+            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
+            alt=""
+          />
+          <div class="hakdata">
+            <p class="hakdtitle">ACS Dashboard</p>
+            <p class="hakddesc">
+              Dashboard for monitoring and analyzing automotive emissions data
+              over time for ACS Data Systems S.p.A. 📈💡
+            </p>
+          </div>
+        </div>
+        <div class="haktile fadein">
+          <img
+            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
+            alt=""
+          />
+          <div class="hakdata">
+            <p class="hakdtitle">TrashTracer</p>
+            <p class="hakddesc">
+              TrashTracer is an ongoing sustainability project utilizing Large
+              Format Displays (LFDs) to promote environmental awareness and
+              sustainability.
+            </p>
+          </div>
+        </div>
+        <div class="haktile fadein">
+          <img
+            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
+            alt=""
+          />
+          <div class="hakdata">
+            <p class="hakdtitle">bancho.html</p>
+            <p class="hakddesc">
+              bancho.html aims to be an alternative frontend for bancho.py based
+              servers.
+            </p>
+          </div>
+        </div>
+        <NuxtLink to="/hackathons" class="hakmore haktile fadein">
+          <div class="iconwrap">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <p>More hackathons</p>
+        </NuxtLink>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -142,5 +193,6 @@ onMounted(() => {
 <style scoped>
 @import url("~/assets/styles/index/title.css");
 @import url("~/assets/styles/index/projects.css");
+@import url("~/assets/styles/index/hackathons.css");
 @import url("~/assets/styles/index/index.css");
 </style>
