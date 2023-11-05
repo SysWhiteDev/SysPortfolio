@@ -1,0 +1,172 @@
+.hackathons {
+  background-color: #cacaca;
+  display: flex;
+  flex-direction: column;
+}
+
+:root.dark .hackathons {
+  background-color: #202020;
+}
+
+.hackathons > * {
+  color: black;
+}
+
+:root.dark .hackathons > * {
+  color: white;
+}
+/* title */
+.haktitle {
+  font-family: "JetBrains mono";
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 30px;
+  margin-bottom: 20px;
+}
+
+/* hak container */
+.hakcontainer {
+  width: 100%;
+  height: 400px;
+  overflow-x: auto;
+  display: flex;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
+
+.hakcontainer > * {
+  flex-shrink: 0;
+  flex-grow: 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 500px) {
+  .hakcontainer > *:nth-child(1) {
+    transition-property: opacity, transform;
+    transition-delay: 0.1s, 0s;
+  }
+  .hakcontainer > *:nth-child(2) {
+    transition-property: opacity, transform;
+    transition-delay: 0.2s, 0s;
+  }
+  .hakcontainer > *:nth-child(3) {
+    transition-property: opacity, transform;
+    transition-delay: 0.3s, 0s;
+  }
+  .hakcontainer > *:nth-child(4) {
+    transition-property: opacity, transform;
+    transition-delay: 0.4s, 0s;
+  }
+}
+
+/* hak tile */
+.haktile {
+  position: relative;
+  z-index: 0;
+  height: 350px;
+  width: 400px;
+  background-color: rgb(39, 39, 42);
+  margin: 20px;
+  margin-left: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.056);
+  transition-property: opacity, transform;
+  transition-duration: 0.2s;
+}
+
+.haktile:first-child {
+  margin-left: 20px;
+}
+
+:root.dark .haktile {
+  /* background-color: rgb(221, 221, 221); */
+}
+
+.haktile:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.haktile > img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hakdata {
+  padding: 15px;
+  max-width: 400px;
+  height: 100px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  white-space: normal;
+}
+
+.hakdata > * {
+  word-wrap: break-word;
+}
+
+:root.dark .hakdata > * {
+  /* color: black; */
+}
+
+.hakdtitle {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.hakddesc {
+  color: rgb(205, 205, 205);
+  font-size: 15px;
+}
+
+/* hak more */
+.hakmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.hakmore > p {
+  margin-top: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+:root.dark .hakmore > p {
+  /* color: black; */
+}
+.iconwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.123);
+  width: 80px;
+  height: 80px;
+}
+
+:root.dark .iconwrap {
+  background-color: rgba(0, 0, 0, 0.123);
+}
+
+.iconwrap > i {
+  font-size: 40px;
+  color: white;
+}
+
+:root.dark .iconwrap > i {
+  /* color: black; */
+}

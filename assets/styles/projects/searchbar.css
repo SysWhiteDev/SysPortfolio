@@ -1,0 +1,35 @@
+.searchbar {
+  margin: 20px;
+  display: flex;
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.525);
+  box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  position: relative;
+  align-items: center;
+}
+
+.searchbar > input {
+  flex: 1;
+  outline: none;
+  min-width: 0;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  color: black;
+  position: relative;
+  background: none;
+}
+
+:root.dark .searchbar > input {
+  color: white;
+}
+
+.searchbar > i {
+  pointer-events: none;
+}
