@@ -11,11 +11,11 @@
 export default {
   methods: {
     getCursor(event) {
-      const mousepos = document.getElementById("mousepos");
-      setTimeout(() => {
-        mousepos.style.top = `${event.y}px`;
-        mousepos.style.left = `${event.x}px`;
-      }, 100);
+      // const mousepos = document.getElementById("mousepos");
+      // setTimeout(() => {
+      //   mousepos.style.top = `${event.y}px`;
+      //   mousepos.style.left = `${event.x}px`;
+      // }, 100);
     },
   },
 };
@@ -35,10 +35,9 @@ export default {
 
 .wrapper {
   position: absolute;
-  top: 0px;
+  height: 100%;
   right: 0px;
   left: 0px;
-  bottom: 0px;
 }
 
 /* mobile */
@@ -54,7 +53,7 @@ export default {
   }
 }
 
-#mousepos {
+/* #mousepos {
   position: fixed;
   width: 500px;
   height: 500px;
@@ -68,7 +67,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-}
+} */
 
 :root.dark #mousepos {
   background: radial-gradient(

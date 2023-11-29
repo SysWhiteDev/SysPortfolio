@@ -20,13 +20,10 @@
   color: black;
 } */
 
-.projects > div {
-  z-index: 1;
-}
 .projects > div > .title {
   font-size: 2.5rem;
   font-weight: 600;
-  z-index: 1;
+  
   /* margin-bottom: 20px; */
 }
 
@@ -34,7 +31,7 @@
   font-size: 1.4rem;
   /* font-weight: 600; */
   margin-bottom: 20px;
-  z-index: 1;
+  
 }
 
 /* buttons */
@@ -52,7 +49,7 @@
   background-size: cover;
   background-image: url("https://i.imgur.com/K0IrTVR.png");
   background-position: 0px -50%;
-  z-index: 0;
+  
 }
 
 @media (max-aspect-ratio: 4/3) {
@@ -72,7 +69,7 @@
   bottom: 0;
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #202020 100%);
-  z-index: 0;
+  
   transition: all 0s;
 }
 
@@ -84,5 +81,5 @@
   bottom: 0;
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #282828 100%);
-  z-index: 0;
+  
 }
