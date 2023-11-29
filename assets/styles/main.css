@@ -52,7 +52,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   background: white;
-  color: black;
+  color: black !important;
   transition: 0.4s all;
   display: inline-flex;
   align-items: center;
@@ -64,13 +64,13 @@ body {
 }
 
 .button > * {
-  color: black;
+  color: black !important;
 }
 
-:root.dark .button {
+/* :root.dark .button {
   background: #000000;
   color: white;
-}
+} */
 
 .button > i {
   margin-left: 7px;
@@ -85,9 +85,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #cbcbcb;
+  background-color: #f1f1f1;
   border-radius: 7px;
-  outline: #3b3b3b 5px solid;
 }
 
 ::-webkit-scrollbar-thumb:hover {

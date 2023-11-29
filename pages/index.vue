@@ -2,29 +2,31 @@
   <div>
     <div class="fullscreen">
       <div class="titlediv fadein">
-        <p style="
+        <div class="title-socials">
+          <p style="
             font-family: 'JetBrains mono';
             font-size: clamp(10px, 15vw, 20px);
           ">
-          Hi, my name is
-        </p>
+            Hi, my name is
+          </p>
+          <div class="socials">
+            <a target="_blank" href="https://github.com/SysWhiteDev/" class="social">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a target="_blank" href="https://discord.com/invite/gFnwC3EM" class="social">
+              <i class="fa-brands fa-discord"></i>
+            </a>
+            <a target="_blank" href="mailto:syswhite.commercial@gmail.com" class="social">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
         <p class="title">SysWhite</p>
         <p style="font-size: clamp(15px, 8vw, 35px)">
           I'm a <u>
             <HomeScrollingWords />
           </u>
         </p>
-      </div>
-      <div class="socials">
-        <a target="_blank" href="https://github.com/SysWhiteDev/" class="social">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a target="_blank" href="https://discord.com/invite/gFnwC3EM" class="social">
-          <i class="fa-brands fa-discord"></i>
-        </a>
-        <a target="_blank" href="mailto:syswhite.commercial@gmail.com" class="social">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
       </div>
     </div>
     <div class="projects">
@@ -40,7 +42,7 @@
           <i class="fa-solid fa-arrow-right"></i>
         </NuxtLink>
       </div>
-      <div class="spacer"/>
+      <div class="spacer" />
       <div class="bg-image" />
     </div>
   </div>
