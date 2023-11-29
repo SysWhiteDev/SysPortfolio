@@ -2,145 +2,47 @@
   <div>
     <div class="fullscreen">
       <div class="titlediv fadein">
-        <p
-          style="
+        <p style="
             font-family: 'JetBrains mono';
             font-size: clamp(10px, 15vw, 20px);
-          "
-        >
+          ">
           Hi, my name is
         </p>
         <p class="title">SysWhite</p>
         <p style="font-size: clamp(15px, 8vw, 35px)">
-          I'm a <u><HomeScrollingWords /></u>
+          I'm a <u>
+            <HomeScrollingWords />
+          </u>
         </p>
       </div>
       <div class="socials">
-        <a
-          target="_blank"
-          href="https://github.com/SysWhiteDev/"
-          class="social"
-        >
+        <a target="_blank" href="https://github.com/SysWhiteDev/" class="social">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a
-          target="_blank"
-          href="https://discord.com/invite/gFnwC3EM"
-          class="social"
-        >
+        <a target="_blank" href="https://discord.com/invite/gFnwC3EM" class="social">
           <i class="fa-brands fa-discord"></i>
         </a>
-        <a
-          target="_blank"
-          href="mailto:syswhite.commercial@gmail.com"
-          class="social"
-        >
+        <a target="_blank" href="mailto:syswhite.commercial@gmail.com" class="social">
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
     </div>
-    <!-- <div class="projects">
-      <p class="prjtitle fadein">&lt;My projects&gt;</p>
-      <div class="prjcontainer">
-        <div class="prjtile fadein">
-          <img
-            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
-            alt=""
-          />
-          <div class="prjdata">
-            <p class="prjdtitle">ACS Dashboard</p>
-            <p class="prjddesc">
-              Dashboard for monitoring and analyzing automotive emissions data
-              over time for ACS Data Systems S.p.A. 📈💡
-            </p>
-          </div>
-        </div>
-        <div class="prjtile fadein">
-          <img
-            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
-            alt=""
-          />
-          <div class="prjdata">
-            <p class="prjdtitle">TrashTracer</p>
-            <p class="prjddesc">
-              TrashTracer is an ongoing sustainability project utilizing Large
-              Format Displays (LFDs) to promote environmental awareness and
-              sustainability.
-            </p>
-          </div>
-        </div>
-        <div class="prjtile fadein">
-          <img
-            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
-            alt=""
-          />
-          <div class="prjdata">
-            <p class="prjdtitle">bancho.html</p>
-            <p class="prjddesc">
-              bancho.html aims to be an alternative frontend for bancho.py based
-              servers.
-            </p>
-          </div>
-        </div>
-        <NuxtLink to="/projects" class="prjmore prjtile fadein">
-          <div class="iconwrap">
-            <i class="fa-solid fa-plus"></i>
-          </div>
-          <p>More projects</p>
+    <div class="projects">
+      <div>
+        <p class="title">Discover my journey</p>
+        <p class="subtitle">A list of projects and challenges embraced at hackathons.</p>
+        <NuxtLink to="/projects" class="button">
+          <p>Projects</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </NuxtLink>
+        <NuxtLink to="/hackathons" class="button">
+          <p>Hackathons</p>
+          <i class="fa-solid fa-arrow-right"></i>
         </NuxtLink>
       </div>
+      <div class="spacer"/>
+      <div class="bg-image" />
     </div>
-    <div class="hackathons">
-      <p class="haktitle fadein" style="text-align: right;">&lt;hackathons&gt;</p>
-      <div class="hakcontainer">
-        <div class="haktile fadein">
-          <img
-            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
-            alt=""
-          />
-          <div class="hakdata">
-            <p class="hakdtitle">ACS Dashboard</p>
-            <p class="hakddesc">
-              Dashboard for monitoring and analyzing automotive emissions data
-              over time for ACS Data Systems S.p.A. 📈💡
-            </p>
-          </div>
-        </div>
-        <div class="haktile fadein">
-          <img
-            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
-            alt=""
-          />
-          <div class="hakdata">
-            <p class="hakdtitle">TrashTracer</p>
-            <p class="hakddesc">
-              TrashTracer is an ongoing sustainability project utilizing Large
-              Format Displays (LFDs) to promote environmental awareness and
-              sustainability.
-            </p>
-          </div>
-        </div>
-        <div class="haktile fadein">
-          <img
-            src="https://as1.ftcdn.net/v2/jpg/01/03/13/68/1000_F_103136864_VuN9DIEjJkGkllnGt5qqyz13APoTz58L.jpg"
-            alt=""
-          />
-          <div class="hakdata">
-            <p class="hakdtitle">bancho.html</p>
-            <p class="hakddesc">
-              bancho.html aims to be an alternative frontend for bancho.py based
-              servers.
-            </p>
-          </div>
-        </div>
-        <NuxtLink to="/hackathons" class="hakmore haktile fadein">
-          <div class="iconwrap">
-            <i class="fa-solid fa-plus"></i>
-          </div>
-          <p>More hackathons</p>
-        </NuxtLink>
-      </div>
-    </div> -->
   </div>
 </template>
 
