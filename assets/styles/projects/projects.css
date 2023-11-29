@@ -1,3 +1,18 @@
+/* wrappoer */
+.projects-wrapper {
+    background-color: rgba(255, 255, 255, 0.525);
+    box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding: 20px;
+    /* margin: 20px; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+/* nodata */
 .nodata {
     display: flex;
     justify-content: center;

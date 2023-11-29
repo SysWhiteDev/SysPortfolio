@@ -53,7 +53,7 @@
 /* desktop adaptation */
 @media (min-aspect-ratio: 4/3) {
   .navwrap {
-    width: 60%;
+    width: 1024px;
   }
 }
 
