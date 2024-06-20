@@ -1,0 +1,15 @@
+.link-wrap > *, link {
+    @apply px-2.5 py-1 rounded-[6px] transition-all flex items-center gap-1;
+}
+
+.link-wrap > *:hover:not(.active) {
+    @apply bg-neutral-100 bg-opacity-10 px-4;
+}
+
+.link-wrap > *:not(.active), .link:not(.active) {
+    @apply px-2.5;
+}
+
+.active {
+  @apply bg-neutral-100 text-neutral-950;
+}
