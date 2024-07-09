@@ -1,10 +1,7 @@
-"use client";
 import { Lora } from "next/font/google";
-import { FaStar } from "react-icons/fa";
-import { IoArrowForwardSharp } from "react-icons/io5";
 const lora = Lora({ subsets: ["latin"] });
 
-export default function Home() {
+export default async function Home() {
   return (
     <main>
       <div className="relative h-dvh">

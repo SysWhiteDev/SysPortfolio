@@ -8,7 +8,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import "./style.css";
-import { BsSpotify } from "react-icons/bs";
 import { usePathname } from "next/navigation";
 export default function Navbar() {
   const path = usePathname();
