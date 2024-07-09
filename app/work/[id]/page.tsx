@@ -6,9 +6,13 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { CgReadme } from "react-icons/cg";
 import Link from "next/link";
-import { remark } from "remark";
-import html from "remark-html";
-
+import rehypeDocument from "rehype-document";
+import rehypeFormat from "rehype-format";
+import rehypeStringify from "rehype-stringify";
+import remarkRehype from "remark-rehype";
+import remarkParse from "remark-parse";
+import { unified } from "unified";
+// import "./readme.css" FIX THIS CSS
 type ProjectData = {
   name: string;
   description: string;
@@ -48,7 +52,13 @@ export default function Page(context: any) {
   const getReadme = async () => {
     await fetch(`/works/${id}/README.md`).then(async (response) => {
       const data = await response.text();
-      const result = await remark().use(html).process(data);
+      const result = await unified()
+        .use(remarkParse)
+        .use(remarkRehype)
+        .use(rehypeDocument)
+        .use(rehypeFormat)
+        .use(rehypeStringify)
+        .process(data);
       setReadmeData(result.toString());
     });
   };
@@ -120,7 +130,7 @@ export default function Page(context: any) {
                   dangerouslySetInnerHTML={{
                     __html: readmeData || "Loading...",
                   }}
-                  className="p-6 text-3xl font-semibold"
+                  className={`p-6`}
                 ></div>
               </div>
               <div className="flex-[1] flex flex-col gap-12">
