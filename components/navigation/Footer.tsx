@@ -13,7 +13,7 @@ export default function Footer(): React.JSX.Element {
               className={`${lora.className} text-neutral-100 flex justify-center text-4xl font-semibold`}
             >
               SysWhite
-              <div className="transition-all ml-3 text-2xl flex gap-2 items-center bg-neutral-800 shadow px-2.5 py-1 rounded-[7px]">
+              <div className="transition-all ml-3 text-2xl flex gap-2 items-center bg-neutral-800 shadow px-2.5 rounded-[6px]">
                 <BiLogoGithub className="opacity-70 hover:opacity-100 cursor-pointer" />
                 <BiLogoDiscord className="opacity-70 hover:opacity-100 cursor-pointer" />
                 <BiEnvelope className="opacity-70 hover:opacity-100 cursor-pointer" />
