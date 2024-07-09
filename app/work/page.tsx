@@ -15,7 +15,7 @@ export default function Page() {
           </span>
         </div>
       </div>
-      <div className="max-w-7xl opacity-80 overflow-hidden mx-2 pb-[16px] grid-cols-1 xl:mx-auto mt-16 flex flex-col gap-2">
+      <div className="max-w-7xl opacity-80 overflow-hidden mx-2 pb-16 grid-cols-1 xl:mx-auto mt-16 flex flex-col gap-2">
         <div className="flex flex-col gap-2">
           <div className="flex flex-col gap-2">
             <WorkCard className="bg-sky-950 text-sky-500 border border-sky-500" />

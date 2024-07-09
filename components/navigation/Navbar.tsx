@@ -21,7 +21,7 @@ export default function Navbar() {
           </Link>
           <Link
             href={"/work"}
-            className={`${path === "/work" ? "active " : ""} !py-0 link px-2.5`}
+            className={`${path.includes("/work") ? "active " : ""} !py-0 link px-2.5`}
           >
             <TooltipProvider>
               <Tooltip>
