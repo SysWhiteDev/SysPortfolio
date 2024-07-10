@@ -15,7 +15,7 @@ export default function Page() {
           <div className="flex text-sm gap-2 items-center"></div>
           <div className="w-full">
             <h1
-              className={`${lora.className} max-w-[90%] text-6xl truncate pb-2.5`}
+              className={`${lora.className} max-w-[90%] my-0 font-normal text-6xl truncate`}
             >
               Email
             </h1>
@@ -31,7 +31,7 @@ export default function Page() {
             <div className="flex text-sm gap-2 items-center"></div>
             <div className="w-full">
               <h1
-                className={`${lora.className} max-w-[90%] text-6xl truncate pb-2.5`}
+                className={`${lora.className} max-w-[90%] my-0 font-normal text-6xl truncate`}
               >
                 X
               </h1>
@@ -46,7 +46,7 @@ export default function Page() {
             <div className="flex text-sm gap-2 items-center"></div>
             <div className="w-full">
               <h1
-                className={`${lora.className} max-w-[90%] text-6xl truncate pb-2.5`}
+                className={`${lora.className} max-w-[90%] my-0 font-normal text-6xl truncate`}
               >
                 GitHub
               </h1>

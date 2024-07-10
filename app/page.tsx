@@ -12,7 +12,7 @@ export default async function Home() {
           <div className="px-6 md:px-10 lg:px-12 flex justify-between items-start py-5 md:py-7 lg:py-10 w-full flex-col lg:flex-row lg:items-end">
             <div>
               <span
-                className={`${lora.className} font-semibold text-6xl sm:text-7xl md:text-8xl xl:text-9xl text-left`}
+                className={`${lora.className} font-semibold text-5xl sm:text-6xl md:text-7xl xl:text-8xl text-left`}
               >
                 Hello, <br /> I&apos;m SysWhite
               </span>

@@ -72,7 +72,7 @@ export default function Page(context: any) {
         <div
           className={`${error ? "opacity-100" : "opacity-0"} transition-all`}
         >
-          <div className="flex justify-center flex-col text-center items-center h-dvh mx-4 gap-2">
+          <div className="flex justify-center flex-col text-center items-center h-dvh mx-4">
             <BiConfused className="rounded-full text-white" size={160} />
             <p className="font-semibold text-xl">
               The project you are looking for doesn&apos;t exist.
@@ -108,8 +108,8 @@ export default function Page(context: any) {
             <div className="absolute top-[25dvh] -z-10 w-full h-[40dvh] flex justify-start blur-[20dvh] lg:blur-[40dvh]">
               <div className="bg-sky-600 h-full w-[65%]" />
             </div>
-            <div className="mx-auto pt-[0px] lg:pt-[15dvh] 2xl:px-0 px-3 lg:px-6 max-w-7xl py-12">
-              <div className="flex flex-col gap-2 py-4">
+            <div className="mx-auto pt-[66px] lg:pt-[15dvh] 2xl:px-0 px-3 lg:px-6 max-w-7xl py-12">
+              <div className="flex flex-col gap-2 pb-4 pt-6 md:pt-12">
                 <div className="flex flex-col lg:flex-row gap-2 justify-between items-start lg:items-center">
                   <p className="text-3xl md:text-4xl lg:text-5xl truncate max-w-[95%] font-semibold tracking-tighter">
                     {projectData?.name || "Loading..."}

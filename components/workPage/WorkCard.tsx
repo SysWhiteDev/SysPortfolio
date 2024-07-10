@@ -9,10 +9,18 @@ import "./workcard.css";
 
 type WorkCardType = {
   className?: string;
+  title: string;
+  id: number;
+  timespan: string;
+  company?: string;
 };
 
 export default function WorkCard({
   className,
+  title,
+  timespan,
+  id,
+  company,
 }: WorkCardType): React.JSX.Element {
   const mouseDivRef = React.useRef<HTMLDivElement | any>();
   const mouseContainerRef = React.useRef<HTMLDivElement | any>();
@@ -28,7 +36,7 @@ export default function WorkCard({
 
   return (
     <Link
-      href={"/work/0"}
+      href={`/work/${id}`}
       className={`${className} relative lg:cursor-none overflow-x-hidden shadow p-4 rounded-[10px] row-span-3  min-h-[350px] first-line:backdrop:h-full flex w-full flex-col justify-between`}
     >
       <div
@@ -48,12 +56,12 @@ export default function WorkCard({
         Project
       </div>
       <div className="w-full">
-        <h1
-          className={`${lora.className} max-w-[90%] text-6xl truncate pb-2.5`}
-        >
-          Project
+        <h1 className={`${lora.className} text-5xl my-0 font-semibold lg:text-6xl pb-2.5`}>
+          {title}
         </h1>
-        <p className="text-sm">Septemper 2023 - January 2022</p>
+        <p className="text-sm">
+          {company} • {timespan}
+        </p>
       </div>
     </Link>
   );
