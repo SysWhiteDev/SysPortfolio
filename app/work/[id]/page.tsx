@@ -7,7 +7,6 @@ import { FiExternalLink } from "react-icons/fi";
 import { IoIosArrowBack } from "react-icons/io";
 import { CgReadme } from "react-icons/cg";
 import Link from "next/link";
-import rehypeDocument from "rehype-document";
 import rehypeFormat from "rehype-format";
 import rehypeStringify from "rehype-stringify";
 import remarkRehype from "remark-rehype";
@@ -60,7 +59,6 @@ export default function Page(context: any) {
       const result = await unified()
         .use(remarkParse)
         .use(remarkRehype)
-        .use(rehypeDocument)
         .use(rehypeFormat)
         .use(rehypeStringify)
         .process(data);
@@ -75,10 +73,7 @@ export default function Page(context: any) {
           className={`${error ? "opacity-100" : "opacity-0"} transition-all`}
         >
           <div className="flex justify-center flex-col text-center items-center h-dvh mx-4 gap-2">
-            <BiConfused
-              className="rounded-full text-white"
-              size={160}
-            />
+            <BiConfused className="rounded-full text-white" size={160} />
             <p className="font-semibold text-xl">
               The project you are looking for doesn&apos;t exist.
             </p>
@@ -101,7 +96,7 @@ export default function Page(context: any) {
           } transition-all`}
         >
           <div className="min-h-dvh ">
-            <div className="relative shadow-black shadow-md">
+            {/* <div className="relative shadow-black shadow-md">
               <Image
                 width={4000}
                 height={300}
@@ -109,14 +104,13 @@ export default function Page(context: any) {
                 src={`/works/${id}/banner.svg`}
                 alt="Project Banner"
               />
-              {/* <div className="w-full h-[300px] absolute bottom-0 bg-gradient-to-b from-neutral-950" /> */}
-            </div>
+            </div> */}
             <div className="absolute top-[25dvh] -z-10 w-full h-[40dvh] flex justify-start blur-[20dvh] lg:blur-[40dvh]">
               <div className="bg-sky-600 h-full w-[65%]" />
             </div>
-            <div className="mx-auto px-6 2xl:px-0 max-w-7xl py-12">
+            <div className="mx-auto pt-[0px] lg:pt-[15dvh] 2xl:px-0 px-3 lg:px-6 max-w-7xl py-12">
               <div className="flex flex-col gap-2 py-4">
-                <div className="flex flex-col lg:flex-row gap-2 justify-between items-start">
+                <div className="flex flex-col lg:flex-row gap-2 justify-between items-start lg:items-center">
                   <p className="text-3xl md:text-4xl lg:text-5xl truncate max-w-[95%] font-semibold tracking-tighter">
                     {projectData?.name || "Loading..."}
                   </p>
@@ -127,7 +121,9 @@ export default function Page(context: any) {
                         target="_blank"
                         key={index}
                         className={`text-sm hover:opacity-80 flex items-center gap-2 px-3 py-1.5 rounded-[6px] ${
-                          index == 0 ? "bg-white text-black" : "bg-sky-950 border-sky-500 border"
+                          index == 0
+                            ? "bg-white text-black"
+                            : "bg-sky-950 border-sky-500 border"
                         }`}
                       >
                         {tag.type.toLocaleLowerCase() === "website" ? (

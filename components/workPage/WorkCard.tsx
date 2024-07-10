@@ -29,15 +29,15 @@ export default function WorkCard({
   return (
     <Link
       href={"/work/0"}
-      className={`${className} relative cursor-none overflow-x-hidden shadow p-4 rounded-[10px] row-span-3  min-h-[350px] first-line:backdrop:h-full flex w-full flex-col justify-between`}
+      className={`${className} relative lg:cursor-none overflow-x-hidden shadow p-4 rounded-[10px] row-span-3  min-h-[350px] first-line:backdrop:h-full flex w-full flex-col justify-between`}
     >
       <div
         ref={mouseContainerRef}
-        className="absolute overflow-hidden group top-0 right-0 left-0 bottom-0"
+        className="absolute n overflow-hidden group top-0 right-0 left-0 bottom-0"
         onMouseMove={(e) => handleMouseMove(e)}
       >
         <div
-          className="w-[72px] workcard-mousediv opacity-0  group-hover:opacity-75 active:outline-offset-0 absolute flex justify-center items-center invisible group-hover:visible h-[72px] rounded-full bg-green-300 shadow shadow-green-500 outline-dashed outline-offset-4"
+          className="w-[72px] hidden lg:flex workcard-mousediv opacity-0  group-hover:opacity-75 active:outline-offset-0 absolute justify-center items-center invisible group-hover:visible h-[72px] rounded-full bg-green-300 shadow shadow-green-500 outline-dashed outline-offset-4"
           ref={mouseDivRef}
         >
           <FaArrowRight size={32} className="text-green-900" />

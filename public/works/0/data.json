@@ -1,14 +1,10 @@
 {
-  "name": "WaveLabStation",
+  "name": "SysWhiteDev's repository",
   "description": "WaveLabStation is a personal project that I have been working on for a while. It is a music player that is designed to be simple and easy to use. It is also designed to be customizable and easy to modify. It is written in C++ and uses the JUCE framework.",
   "tags": [
     {
       "text": "Personal Project",
       "color": "red"
-    },
-    {
-      "text": "Next.JS",
-      "color": "blue"
     }
   ],
   "links": [

@@ -12,15 +12,17 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const path = usePathname();
   return (
-    <div className="flex z-50 fixed right-0 top-0 left-0 justify-center md:justify-between items-start">
-      <nav className=" w-6xl flex  md:flex-none justify-center md:justify-between items-center px-2 py-2 rounded-[10px] shadow-sm bg-opacity-65 border bg-neutral-800  border-neutral-700 backdrop-blur-[2px] mx-7 m-6">
+    <div className="flex z-50 fixed top-0 left-0 justify-center md:justify-between items-start">
+      <nav className=" w-6xl flex md:flex-none justify-center md:justify-between items-center px-2 py-2 rounded-[10px] shadow-sm bg-opacity-65 border bg-neutral-800  border-neutral-700 backdrop-blur-[2px] m-2 lg:mx-7 lg:m-6">
         <div className="link-wrap flex gap-2 items-center ">
           <Link href={"/"} className={`${path === "/" ? "active " : ""}`}>
             Home
           </Link>
           <Link
             href={"/work"}
-            className={`${path.includes("/work") ? "active " : ""} !py-0 link px-2.5`}
+            className={`${
+              path.includes("/work") ? "active " : ""
+            } !py-0 link px-2.5`}
           >
             <TooltipProvider>
               <Tooltip>
@@ -37,6 +39,9 @@ export default function Navbar() {
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
+          </Link>
+          <Link href={"/contacts"} className={`${path === "/contacts" ? "active " : ""}`}>
+            Contacts
           </Link>
         </div>
       </nav>
