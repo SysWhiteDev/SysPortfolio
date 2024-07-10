@@ -30,14 +30,13 @@ h6 {
 }
 
 /* Links */
-a {
-  @apply text-blue-500;
+/* a {
   text-decoration: none;
-}
+} */
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 /* Lists */
 ul,

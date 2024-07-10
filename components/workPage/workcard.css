@@ -1,0 +1,14 @@
+.workcard-mousediv {
+  transition: all 0.15s, top 0s, left 0s;
+  transform: translate(-50%, -50%);
+  animation: rotate 15s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
