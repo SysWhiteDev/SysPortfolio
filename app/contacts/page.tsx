@@ -1,21 +1,58 @@
-import React from "react";
-
-export default function Page(): React.JSX.Element {
+import { Lora } from "next/font/google";
+import Link from "next/link";
+const lora = Lora({ subsets: ["latin"] });
+export default function Page() {
   return (
-    <div className="h-dvh overflow-hidden">
-      <div className="px-2 lg:px-6 pt-[66px] lg:pt-[90px] py-2 border-b border-neutral-700">
-        <span className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tighter">
-          Contacts
-        </span>
+    <div className="noisy min-h-dvh flex justify-center items-center flex-col">
+      <div className="-z-10 absolute w-full h-dvh flex justify-center items-center blur-[250px]">
+        <div className="w-3/4 bg-purple-600 h-[150px]" />
       </div>
-      <div className="grid grid-cols-2 h-full items-center">
-        <div className="flex-1 flex-col border-r border-neutral-700">
-          <p className="text-2xl font-semibold">Email</p>
-          <a href="mailto:syswhite.commercial@gmail.com"></a>
-        </div>
-        <div className="flex-1">
-          <span className="text-2xl font-semibold">Email:</span>
-          <a href="mailto:syswhite.commercial@gmail.com"></a>
+      <div className="max-w-7xl pt-[66px] lg:pt-[98px] w-full px-3 opacity-80 overflow-hidden pb-16 grid-cols-1 xl:mx-auto mt-16 flex flex-col gap-2">
+        <Link
+          href={"mailto:syswhite.commercial@gmail.com"}
+          className={`bg-violet-950 h-[200px] transition-all text-violet-400 border bg-opacity-80 hover:bg-opacity-50 border-violet-500 relative overflow-x-hidden shadow p-4 rounded-[10px] row-span-3 first-line:backdrop:h-full flex w-full flex-col justify-between`}
+        >
+          <div className="flex text-sm gap-2 items-center"></div>
+          <div className="w-full">
+            <h1
+              className={`${lora.className} max-w-[90%] text-6xl truncate pb-2.5`}
+            >
+              Email
+            </h1>
+            <p className="text-sm">syswhite.commercial@gmail.com</p>
+          </div>
+        </Link>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+          <Link
+            href={"https://x.com/sys_white"}
+            target="_blank"
+            className={`bg-slate-950 h-[200px] transition-all hover:bg-opacity-80 text-slate-400 border border-slate-500 relative overflow-x-hidden shadow p-4 rounded-[10px] row-span-3 first-line:backdrop:h-full flex w-full flex-col justify-between`}
+          >
+            <div className="flex text-sm gap-2 items-center"></div>
+            <div className="w-full">
+              <h1
+                className={`${lora.className} max-w-[90%] text-6xl truncate pb-2.5`}
+              >
+                X
+              </h1>
+              <p className="text-sm">@sys_white</p>
+            </div>
+          </Link>
+          <Link
+            href={"https://github.com/syswhitedev"}
+            target="_blank"
+            className={`bg-slate-700 h-[200px] transition-all text-slate-300 border hover:bg-opacity-75 bg-opacity-90 border-slate-400 relative overflow-x-hidden shadow p-4 rounded-[10px] row-span-3 first-line:backdrop:h-full flex w-full flex-col justify-between`}
+          >
+            <div className="flex text-sm gap-2 items-center"></div>
+            <div className="w-full">
+              <h1
+                className={`${lora.className} max-w-[90%] text-6xl truncate pb-2.5`}
+              >
+                GitHub
+              </h1>
+              <p className="text-sm">@SysWhiteDev</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

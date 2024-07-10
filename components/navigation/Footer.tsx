@@ -5,7 +5,7 @@ const lora = Lora({ subsets: ["latin"] });
 
 export default function Footer(): React.JSX.Element {
   return (
-    <div className=" border-t border-neutral-700">
+    <div className="z-50 border-t border-neutral-700">
       <div className="max-w-7xl 2xl:px-0 px-4 mx-auto p-8 flex">
         <div className="w-full">
           <div className="flex flex-col-reverse lg:flex-row items-center mb-1 justify-between w-full gap-6 text-amber-500 text-sm">
