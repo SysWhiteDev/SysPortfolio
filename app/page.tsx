@@ -1,13 +1,39 @@
 import { Lora } from "next/font/google";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandMysql, TbBrandNuxt } from "react-icons/tb";
-import { SiAirtable, SiBootstrap, SiCircleci, SiClerk, SiCplusplus, SiCsharp, SiDocker, SiFirebase, SiGit, SiJavascript, SiKubernetes, SiMariadb, SiNginx, SiPostgresql, SiPython, SiRedis, SiSqlite, SiSupabase, SiSwift, SiTailwindcss, SiTypescript, SiVapor, SiVercel } from "react-icons/si";
+import {
+  SiAirtable,
+  SiBootstrap,
+  SiCircleci,
+  SiClerk,
+  SiCplusplus,
+  SiCsharp,
+  SiDocker,
+  SiFirebase,
+  SiGit,
+  SiJavascript,
+  SiKubernetes,
+  SiMariadb,
+  SiNginx,
+  SiPostgresql,
+  SiPython,
+  SiRedis,
+  SiSqlite,
+  SiSupabase,
+  SiSwift,
+  SiTailwindcss,
+  SiTypescript,
+  SiVapor,
+  SiVercel,
+} from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandReactNative } from "react-icons/tb";
 import { IoLogoVue } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { TbBrandPrisma } from "react-icons/tb";
+import Link from "next/link";
+import Image from "next/image";
 const lora = Lora({ subsets: ["latin"] });
 
 export default async function Home() {
@@ -40,11 +66,11 @@ export default async function Home() {
           I can use it in your future project
         </p>
         <div className="max-w-7xl mx-auto">
-        <div className="pt-10">
+          <div className="pt-10">
             <p className="pb-1 font-semibold text-lg">Languages</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiJavascript size={70} className="opacity-90" />
+                <SiJavascript size={70} className="opacity-90 rounded-[5px]" />
                 <p className="font-semibold text-lg">Javascript</p>
               </div>
               <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
@@ -192,6 +218,29 @@ export default async function Home() {
                 <p className="font-semibold text-lg">Bootstrap</p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="relative overflow-hidden flex justify-between flex-col max-w-7xl h-[250px] mx-auto mt-10 p-4 border-2 rounded-xl bg-neutral-900">
+          <p className="text-3xl font-semibold sm:w-[65%]">
+            See what I created with all those technologies!
+          </p>
+          <div className="absolute hidden sm:block w-[35%] bottom-0 right-0 h-full object-cover">
+            <div className="h-full top-0 bottom-0 absolute left-0 w-40 bg-gradient-to-r from-neutral-900" />
+            <Image
+              className="h-full object-cover"
+              alt="HomeFrames"
+              src={"/assets/homeframes.svg"}
+              width={450}
+              height={2000}
+            />
+          </div>
+          <div className="flex flex-row items-center gap-1.5">
+            <Link
+              href={"/work"}
+              className={`bg-white mt-2.5 hover:underline text-black hover:opacity-80 flex items-center gap-2 px-3 py-1.5 rounded-[6px]`}
+            >
+              My work
+            </Link>
           </div>
         </div>
       </div>
