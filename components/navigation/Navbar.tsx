@@ -45,6 +45,14 @@ export default function Navbar() {
           >
             Contacts
           </Link>
+          <Link
+            href={
+              "https://docs.google.com/document/d/1TFzYKCOe1yHOBwgH3D-bM3E2tIS8q77oXxmzzA0EVJE/edit?usp=sharing"
+            } target="_blank"
+          >
+            CV
+            <TbExternalLink />
+          </Link>
         </div>
       </nav>
     </div>

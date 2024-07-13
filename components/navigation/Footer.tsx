@@ -24,9 +24,18 @@ export default function Footer(): React.JSX.Element {
             >
               SysWhite
               <div className="transition-all ml-3 text-2xl flex gap-2 items-center bg-neutral-800 shadow px-2.5 rounded-[6px]">
-                <BiLogoGithub className="opacity-70 hover:opacity-100 cursor-pointer" />
-                <BiLogoDiscord className="opacity-70 hover:opacity-100 cursor-pointer" />
-                <BiEnvelope className="opacity-70 hover:opacity-100 cursor-pointer" />
+                <Link href={"https://github.com/SysWhiteDev"} target="_blank">
+                  <BiLogoGithub className="opacity-70 hover:opacity-100 cursor-pointer" />
+                </Link>
+                <Link
+                  href={"https://discordapp.com/users/828688187983265823"}
+                  target="_blank"
+                >
+                  <BiLogoDiscord className="opacity-70 hover:opacity-100 cursor-pointer" />
+                </Link>
+                <Link href={"mailto:syswhite.commercial@gmail.com"}>
+                  <BiEnvelope className="opacity-70 hover:opacity-100 cursor-pointer" />
+                </Link>
               </div>
             </span>
             <div className="flex items-center gap-2">
