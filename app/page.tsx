@@ -39,12 +39,12 @@ const lora = Lora({ subsets: ["latin"] });
 export default async function Home() {
   return (
     <main className="">
-      <div className="relative h-dvh">
-        <div className="overflow-x-hidden flex items-center flex-col w-full h-dvh noisy outline outline-1 outline-neutral-800">
+      <div className="relative h-[38dvh]">
+        <div className="overflow-hidden flex items-center flex-col w-full h-full noisy outline outline-1 outline-neutral-800">
           <div className="-z-10 relative w-full blur-[300px] mb-24 h-full">
             <div className="absolute bottom-0 top-2 h-[300px] w-[300px] bg-blue-500" />
           </div>
-          <div className="px-6 md:px-10 lg:px-12 flex justify-between items-start py-5 md:py-7 lg:py-10 w-full flex-col lg:flex-row lg:items-end">
+          <div className="px-6 md:px-10 lg:px-12 flex justify-between items-start pb-5 md:pb-7 lg:pb-10 w-full flex-col lg:flex-row lg:items-end">
             <div>
               <span
                 className={`${lora.className} font-semibold text-5xl sm:text-6xl md:text-7xl xl:text-8xl text-left`}
@@ -69,56 +69,77 @@ export default async function Home() {
           <div className="pt-10">
             <p className="pb-1 font-semibold text-lg">Languages</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiJavascript size={70} className="opacity-90 rounded-[5px]" />
-                <p className="font-semibold text-lg">Javascript</p>
-              </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiTypescript size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Typescript</p>
-              </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiPython size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Python</p>
-              </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiCplusplus size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">C++</p>
-              </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiCsharp size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">C#</p>
-              </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <Link href={"https://www.javascript.com/"} target="_blank">
+                <div className="hover:text-yellow-400 hover:shadow-yellow-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiJavascript
+                    size={70}
+                    className="opacity-90 rounded-[4px]"
+                  />
+                  <p className="font-semibold text-lg">Javascript</p>
+                </div>
+              </Link>
+              <Link href={"https://www.typescriptlang.org/"} target="_blank">
+                <div className="hover:text-blue-500 hover:shadow-blue-500 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiTypescript size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Typescript</p>
+                </div>
+              </Link>
+              <Link href={"https://www.python.org/"} target="_blank">
+                <div className="hover:text-yellow-300 hover:shadow-yellow-300 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiPython size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Python</p>
+                </div>
+              </Link>
+              <Link href={"https://cplusplus.com/"} target="_blank">
+                <div className="hover:text-blue-600 hover:shadow-blue-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiCplusplus size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">C++</p>
+                </div>
+              </Link>
+              <Link
+                href={"https://dotnet.microsoft.com/en-us/languages/csharp"}
+                target="_blank"
+              >
+                <div className="hover:text-purple-600 hover:shadow-purple-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiCsharp size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">C#</p>
+                </div>
+              </Link>
+              <Link
+                href={"https://www.swift.org/"}
+                target="_blank"
+              >
+              <div className="hover:text-orange-600 hover:shadow-orange-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiSwift size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Swift</p>
               </div>
+              </Link>
             </div>
           </div>
           <div className="pt-6">
             <p className="pb-1 font-semibold text-lg">Frontend</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <RiNextjsFill size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Next.JS</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <IoLogoVue size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Vue.JS</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <TbBrandNuxt size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Nuxt.JS</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-sky-400 hover:shadow-sky-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <TbBrandReactNative size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">React Native</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <RiFlutterFill size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Flutter</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-sky-400 hover:shadow-sky-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <RiReactjsLine size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">React</p>
               </div>
@@ -127,15 +148,15 @@ export default async function Home() {
           <div className="pt-6">
             <p className="pb-1 font-semibold text-lg">Backend</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiExpress size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Express.JS</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-violet-500 hover:shadow-violet-500 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiVapor size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Vapor</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-gray-300 hover:shadow-gray-300 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <TbBrandPrisma size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Prisma</p>
               </div>
@@ -144,35 +165,35 @@ export default async function Home() {
           <div className="pt-6">
             <p className="pb-1 font-semibold text-lg">Databases</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-sky-600 hover:shadow-sky-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <TbBrandMysql size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">MySQL</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-sky-700 hover:shadow-sky-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiSqlite size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">SQLite</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-sky-600 hover:shadow-sky-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiPostgresql size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">PostgreSQL</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-red-600 hover:shadow-red-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiRedis size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Redis</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-pink-600 hover:shadow-pink-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiMariadb size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">MariaDB</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiSupabase size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Supabase</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-red-500 hover:shadow-red-500 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiFirebase size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Firebase</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-yellow-600 hover:shadow-yellow-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiAirtable size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Airtable</p>
               </div>
@@ -181,39 +202,39 @@ export default async function Home() {
           <div className="pt-6">
             <p className="pb-1 font-semibold text-lg">DevOps / Other</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-blue-700 hover:shadow-blue-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiDocker size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Docker</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-blue-700 hover:shadow-blue-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiKubernetes size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Kubernetes</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-orange-700 hover:shadow-orange-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiGit size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Git</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiCircleci size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">CircleCI</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiVercel size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Vercel</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiClerk size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Clerk</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-green-700 hover:shadow-green-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiNginx size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Nginx</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiTailwindcss size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">TailwindCSS</p>
               </div>
-              <div className="shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+              <div className="hover:text-blue-600 hover:shadow-blue-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                 <SiBootstrap size={70} className="opacity-90" />
                 <p className="font-semibold text-lg">Bootstrap</p>
               </div>
@@ -237,7 +258,7 @@ export default async function Home() {
           <div className="flex flex-row items-center gap-1.5">
             <Link
               href={"/work"}
-              className={`bg-white mt-2.5 hover:underline text-black hover:opacity-80 flex items-center gap-2 px-3 py-1.5 rounded-[6px]`}
+              className={`bg-white w-full sm:w-auto mt-2.5 text-center hover:underline text-black hover:opacity-80 flex items-center justify-center gap-2 px-3 py-1.5 rounded-[6px]`}
             >
               My work
             </Link>
