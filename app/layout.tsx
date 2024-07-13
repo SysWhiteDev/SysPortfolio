@@ -9,6 +9,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "SysWhite's Portfolio",
   description: "Turn your ideas into reality by collaborating with me.",
+  openGraph: {
+    title: 'SysWhite\'s Portfolio',
+    description: 'Discover what I made in my journey!',
+    url: 'https://syswhite.dev/',
+    siteName: 'SysWhite\'s Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
