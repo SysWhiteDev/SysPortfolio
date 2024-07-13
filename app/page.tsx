@@ -105,139 +105,188 @@ export default async function Home() {
                   <p className="font-semibold text-lg">C#</p>
                 </div>
               </Link>
-              <Link
-                href={"https://www.swift.org/"}
-                target="_blank"
-              >
-              <div className="hover:text-orange-600 hover:shadow-orange-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiSwift size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Swift</p>
-              </div>
+              <Link href={"https://www.swift.org/"} target="_blank">
+                <div className="hover:text-orange-600 hover:shadow-orange-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiSwift size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Swift</p>
+                </div>
               </Link>
             </div>
           </div>
           <div className="pt-6">
             <p className="pb-1 font-semibold text-lg">Frontend</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <RiNextjsFill size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Next.JS</p>
-              </div>
-              <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <IoLogoVue size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Vue.JS</p>
-              </div>
-              <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <TbBrandNuxt size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Nuxt.JS</p>
-              </div>
-              <div className="hover:text-sky-400 hover:shadow-sky-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <TbBrandReactNative size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">React Native</p>
-              </div>
-              <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <RiFlutterFill size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Flutter</p>
-              </div>
-              <div className="hover:text-sky-400 hover:shadow-sky-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <RiReactjsLine size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">React</p>
-              </div>
+              <Link href={"https://nextjs.org/"} target="_blank">
+                <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <RiNextjsFill size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Next.JS</p>
+                </div>
+              </Link>
+              <Link href={"https://vuejs.org/"} target="_blank">
+                <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <IoLogoVue size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Vue.JS</p>
+                </div>
+              </Link>
+              <Link href={"https://nuxt.com/"} target="_blank">
+                <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <TbBrandNuxt size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Nuxt.JS</p>
+                </div>
+              </Link>
+              <Link href={"https://reactnative.dev/"} target="_blank">
+                <div className="hover:text-sky-400 hover:shadow-sky-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <TbBrandReactNative size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">React Native</p>
+                </div>
+              </Link>
+              <Link href={"https://flutter.dev/"} target="_blank">
+                <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <RiFlutterFill size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Flutter</p>
+                </div>
+              </Link>
+              <Link href={"https://react.dev/"} target="_blank">
+                <div className="hover:text-sky-400 hover:shadow-sky-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <RiReactjsLine size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">React</p>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="pt-6">
             <p className="pb-1 font-semibold text-lg">Backend</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiExpress size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Express.JS</p>
-              </div>
-              <div className="hover:text-violet-500 hover:shadow-violet-500 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiVapor size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Vapor</p>
-              </div>
-              <div className="hover:text-gray-300 hover:shadow-gray-300 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <TbBrandPrisma size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Prisma</p>
-              </div>
+              <Link href={"https://expressjs.com/"} target="_blank">
+                <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiExpress size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Express.JS</p>
+                </div>
+              </Link>
+              <Link href={"https://vapor.codes/"} target="_blank">
+                <div className="hover:text-violet-500 hover:shadow-violet-500 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiVapor size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Vapor</p>
+                </div>
+              </Link>
+              <Link href={"https://www.prisma.io/"} target="_blank">
+                <div className="hover:text-gray-300 hover:shadow-gray-300 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <TbBrandPrisma size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Prisma</p>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="pt-6">
             <p className="pb-1 font-semibold text-lg">Databases</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="hover:text-sky-600 hover:shadow-sky-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <TbBrandMysql size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">MySQL</p>
-              </div>
-              <div className="hover:text-sky-700 hover:shadow-sky-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiSqlite size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">SQLite</p>
-              </div>
-              <div className="hover:text-sky-600 hover:shadow-sky-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiPostgresql size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">PostgreSQL</p>
-              </div>
-              <div className="hover:text-red-600 hover:shadow-red-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiRedis size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Redis</p>
-              </div>
-              <div className="hover:text-pink-600 hover:shadow-pink-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiMariadb size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">MariaDB</p>
-              </div>
-              <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiSupabase size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Supabase</p>
-              </div>
-              <div className="hover:text-red-500 hover:shadow-red-500 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiFirebase size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Firebase</p>
-              </div>
-              <div className="hover:text-yellow-600 hover:shadow-yellow-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiAirtable size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Airtable</p>
-              </div>
+              <Link href={"https://www.mysql.com/"} target="_blank">
+                <div className="hover:text-sky-600 hover:shadow-sky-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <TbBrandMysql size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">MySQL</p>
+                </div>
+              </Link>
+              <Link href={"https://www.sqlite.org/index.html"} target="_blank">
+                <div className="hover:text-sky-700 hover:shadow-sky-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiSqlite size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">SQLite</p>
+                </div>
+              </Link>
+              <Link href={"https://www.postgresql.org/"} target="_blank">
+                <div className="hover:text-sky-600 hover:shadow-sky-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiPostgresql size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">PostgreSQL</p>
+                </div>
+              </Link>
+              <Link href={"https://redis.io/"} target="_blank">
+                <div className="hover:text-red-600 hover:shadow-red-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiRedis size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Redis</p>
+                </div>
+              </Link>
+              <Link href={"https://mariadb.org/"} target="_blank">
+                <div className="hover:text-pink-600 hover:shadow-pink-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiMariadb size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">MariaDB</p>
+                </div>
+              </Link>
+              <Link href={"https://supabase.com/"} target="_blank">
+                <div className="hover:text-green-600 hover:shadow-green-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiSupabase size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Supabase</p>
+                </div>
+              </Link>
+              <Link href={"https://firebase.google.com/"} target="_blank">
+                <div className="hover:text-red-500 hover:shadow-red-500 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiFirebase size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Firebase</p>
+                </div>
+              </Link>
+              <Link href={"https://airtable.com/"} target="_blank">
+                <div className="hover:text-yellow-600 hover:shadow-yellow-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiAirtable size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Airtable</p>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="pt-6">
             <p className="pb-1 font-semibold text-lg">DevOps / Other</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              <div className="hover:text-blue-700 hover:shadow-blue-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiDocker size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Docker</p>
-              </div>
-              <div className="hover:text-blue-700 hover:shadow-blue-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiKubernetes size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Kubernetes</p>
-              </div>
-              <div className="hover:text-orange-700 hover:shadow-orange-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiGit size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Git</p>
-              </div>
-              <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiCircleci size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">CircleCI</p>
-              </div>
-              <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiVercel size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Vercel</p>
-              </div>
-              <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiClerk size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Clerk</p>
-              </div>
-              <div className="hover:text-green-700 hover:shadow-green-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiNginx size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Nginx</p>
-              </div>
-              <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiTailwindcss size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">TailwindCSS</p>
-              </div>
-              <div className="hover:text-blue-600 hover:shadow-blue-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                <SiBootstrap size={70} className="opacity-90" />
-                <p className="font-semibold text-lg">Bootstrap</p>
-              </div>
+              <Link href={"https://www.docker.com/"} target="_blank">
+                <div className="hover:text-blue-700 hover:shadow-blue-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiDocker size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Docker</p>
+                </div>
+              </Link>
+              <Link href={"https://kubernetes.io/"} target="_blank">
+                <div className="hover:text-blue-700 hover:shadow-blue-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiKubernetes size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Kubernetes</p>
+                </div>
+              </Link>
+              <Link href={"https://git-scm.com/"} target="_blank">
+                <div className="hover:text-orange-700 hover:shadow-orange-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiGit size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Git</p>
+                </div>
+              </Link>
+              <Link href={"https://circleci.com/"} target="_blank">
+                <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiCircleci size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">CircleCI</p>
+                </div>
+              </Link>
+              <Link href={"https://vercel.com/"} target="_blank">
+                <div className="hover:shadow-white transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiVercel size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Vercel</p>
+                </div>
+              </Link>
+              <Link href={"https://clerk.com/"} target="_blank">
+                <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiClerk size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Clerk</p>
+                </div>
+              </Link>
+              <Link href={"https://nginx.org/"} target="_blank">
+                <div className="hover:text-green-700 hover:shadow-green-700 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiNginx size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Nginx</p>
+                </div>
+              </Link>
+              <Link href={"https://tailwindcss.com/"} target="_blank">
+                <div className="hover:text-blue-400 hover:shadow-blue-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiTailwindcss size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">TailwindCSS</p>
+                </div>
+              </Link>
+              <Link href={"https://getbootstrap.com/"} target="_blank">
+                <div className="hover:text-blue-600 hover:shadow-blue-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
+                  <SiBootstrap size={70} className="opacity-90" />
+                  <p className="font-semibold text-lg">Bootstrap</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
