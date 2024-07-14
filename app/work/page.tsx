@@ -85,16 +85,16 @@ export default function Page() {
             className="lg:col-span-2 bg-sky-950 text-sky-500 border border-sky-500"
           />
         </div>
-        <div className="relative overflow-hidden flex justify-between flex-col sm:flex-row items-start w-full mx-auto mt-10 p-4 border-2 rounded-xl bg-neutral-900">
+        <div className="relative overflow-hidden flex justify-between flex-col sm:flex-row items-start w-full mx-auto mt-16 p-4 border-2 rounded-xl bg-neutral-900">
           <p className="text-3xl font-semibold sm:w-[65%]">
             Liked what you saw? Get in contact!
           </p>
-          <div className="sm:w-auto mt-10 sm:mt-0 flex-col sm:flex-row w-full flex items-center gap-2.5">
+          <div className="sm:w-auto mt-6 sm:mt-0 flex-col sm:flex-row w-full flex items-center gap-2.5">
             <Link
               href={
                 "https://docs.google.com/document/d/1TFzYKCOe1yHOBwgH3D-bM3E2tIS8q77oXxmzzA0EVJE/edit?usp=sharing"
               }
-              className={`hover:opacity-80 w-full justify-center flex items-center gap-2 px-3 py-1.5 rounded-[6px] outline outline-1 -outline-offset-1 outline-neutral-700 bg-neutral-800
+              className={`hover:opacity-80 w-full justify-center flex items-center gap-2 px-3 py-1.5 rounded-[6px] outline outline-1 -outline-offset-1 outline-zinc-700 bg-zinc-800
               `}
             >
               CV

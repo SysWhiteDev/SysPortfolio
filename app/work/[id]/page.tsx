@@ -14,6 +14,7 @@ import remarkParse from "remark-parse";
 import { unified } from "unified";
 import "./readme.css";
 import { BiConfused } from "react-icons/bi";
+import { TbExternalLink } from "react-icons/tb";
 type ProjectData = {
   name: string;
   description: string;
@@ -161,6 +162,29 @@ export default function Page(context: any) {
                     }}
                     className={`p-6 pt-0`}
                   ></div>
+                  <div className="relative overflow-hidden flex justify-between flex-col sm:flex-row items-start w-full mx-auto mt-10 p-4 border-t bg-neutral-900 border-neutral-700">
+                    <p className="text-3xl font-semibold sm:w-[65%]">
+                      Liked what you saw? Get in contact!
+                    </p>
+                    <div className="sm:w-auto mt-6 sm:mt-0 flex-col sm:flex-row w-full flex items-center gap-2.5">
+                      <Link
+                        href={
+                          "https://docs.google.com/document/d/1TFzYKCOe1yHOBwgH3D-bM3E2tIS8q77oXxmzzA0EVJE/edit?usp=sharing"
+                        }
+                        className={`hover:opacity-80 w-full justify-center flex items-center gap-2 px-3 py-1.5 rounded-[6px] outline outline-1 -outline-offset-1 outline-zinc-700 bg-zinc-800
+              `}
+                      >
+                        CV
+                        <TbExternalLink />
+                      </Link>
+                      <Link
+                        href={"/contacts"}
+                        className={`bg-white w-full whitespace-nowrap text-center hover:underline text-black hover:opacity-80 flex items-center justify-center gap-2 px-3 py-1.5 rounded-[6px]`}
+                      >
+                        Contact me
+                      </Link>
+                    </div>
+                  </div>
                 </div>
                 <div className="h-full my-6 order-first lg:order-last col-span-1 lg:my-0 flex flex-col">
                   <div className="lg:sticky top-6 flex flex-col gap-12">
@@ -183,8 +207,7 @@ export default function Page(context: any) {
                       </div>
                     </div>
                     <div>
-                      
-                      <span className="font-semibold">Other people</span>
+                      <span className="font-semibold">People</span>
                       <div className="text-sm pt-3 flex flex-col gap-2.5">
                         {projectData?.people.map((person, index) => (
                           <Link

@@ -1,0 +1,28 @@
+{
+  "name": "Authentication Flow",
+  "description": "An effort to fix JWTs biggest problem, which is invalidating tokens. 🔑",
+  "tags": [
+    {
+      "text": "Personal Project",
+      "color": "red"
+    },
+    {
+      "text": "Used by EyeHide",
+      "color": "red"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://github.com/SysWhiteDev/AuthenticationBackend",
+      "type": "GitHub"
+    }
+  ],
+  "people": [
+    {
+      "name": "SysWhiteDev",
+      "role": "Developer",
+      "avatar": "https://avatars.githubusercontent.com/u/76256827?s=48&v=4",
+      "url": "https://github.com/SysWhiteDev"
+    }
+  ]
+}

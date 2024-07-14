@@ -39,12 +39,12 @@ const lora = Lora({ subsets: ["latin"] });
 export default async function Home() {
   return (
     <main className="">
-      <div className="relative h-[38dvh]">
-        <div className="overflow-hidden flex items-center flex-col w-full h-full noisy outline outline-1 outline-neutral-800">
-          <div className="-z-10 relative w-full blur-[300px] mb-24 h-full">
+      <div className="relative h-[35dvh]">
+        <div className="overflow-hidden relative justify-end flex items-center flex-col w-full h-full noisy outline outline-1 outline-neutral-800">
+          <div className="-z-10 absolute top-0 bottom-0 left-0 right-0 w-full blur-[300px] mb-24 h-full">
             <div className="absolute bottom-0 top-2 h-[300px] w-[300px] bg-blue-500" />
           </div>
-          <div className="px-6 md:px-10 lg:px-12 flex justify-between items-start pb-5 md:pb-7 lg:pb-10 w-full flex-col lg:flex-row lg:items-end">
+          <div className="px-4 md:px-10 flex-shrink-0 lg:px-12 flex justify-between items-start pb-5 md:pb-7 lg:pb-10 w-full flex-col lg:flex-row lg:items-end">
             <div>
               <span
                 className={`${lora.className} font-semibold text-5xl sm:text-6xl md:text-7xl xl:text-8xl text-left`}
@@ -290,7 +290,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        <div className="relative overflow-hidden flex justify-between flex-col max-w-7xl h-[250px] mx-auto mt-10 p-4 border-2 rounded-xl bg-neutral-900">
+        <div className="relative overflow-hidden flex justify-between flex-col max-w-7xl lg:h-[250px] h-auto mx-auto mt-12 p-4 border-2 rounded-xl bg-neutral-900">
           <p className="text-3xl font-semibold sm:w-[65%]">
             See what I created with all those technologies!
           </p>
@@ -304,10 +304,10 @@ export default async function Home() {
               height={2000}
             />
           </div>
-          <div className="flex flex-row items-center gap-1.5">
+          <div className="flex flex-row mt-6 items-center gap-1.5">
             <Link
               href={"/work"}
-              className={`bg-white w-full sm:w-auto mt-2.5 text-center hover:underline text-black hover:opacity-80 flex items-center justify-center gap-2 px-3 py-1.5 rounded-[6px]`}
+              className={`bg-white w-full sm:w-auto text-center hover:underline text-black hover:opacity-80 flex items-center justify-center gap-2 px-3 py-1.5 rounded-[6px]`}
             >
               My work
             </Link>
