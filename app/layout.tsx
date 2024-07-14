@@ -7,6 +7,7 @@ import Footer from "@/components/navigation/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://syswhite.dev'),
   title: "SysWhite's Portfolio",
   description: "Turn your ideas into reality by collaborating with me.",
   openGraph: {

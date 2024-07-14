@@ -1,0 +1,34 @@
+{
+  "name": "EyeHide",
+  "description": "The project that aims to bring simplified privacy to the world 🌍",
+  "tags": [
+    {
+      "text": "Startup",
+      "color": "red"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://eyehide.org",
+      "type": "Website"
+    },
+    {
+      "url": "https://github.com/EyeHide",
+      "type": "GitHub"
+    }
+  ],
+  "people": [
+    {
+      "name": "Resonance",
+      "role": "",
+      "avatar": "https://avatars.githubusercontent.com/u/117764467?s=64&v=4",
+      "url": "https://github.com/resonanceee"
+    },
+    {
+      "name": "Hamza Jamil",
+      "role": "",
+      "avatar": "https://avatars.githubusercontent.com/u/47300606?v=4",
+      "url": "https://github.com/Hamza5955"
+    }
+  ]
+}

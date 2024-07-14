@@ -111,7 +111,7 @@ export default function Page(context: any) {
             <div className="mx-auto pt-[66px] lg:pt-[15dvh] 2xl:px-0 px-3 lg:px-6 max-w-7xl py-12">
               <div className="flex flex-col gap-2 pb-4 pt-6 md:pt-12">
                 <div className="flex flex-col lg:flex-row gap-2 justify-between items-start lg:items-center">
-                  <p className="text-3xl md:text-4xl lg:text-5xl truncate max-w-[95%] font-semibold tracking-tighter">
+                  <p className="text-3xl md:text-4xl lg:text-5xl pb-2 truncate max-w-[95%] font-semibold tracking-tighter">
                     {projectData?.name || "Loading..."}
                   </p>
                   <div className="flex flex-row-reverse items-center gap-1.5">
@@ -148,7 +148,7 @@ export default function Page(context: any) {
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
-                <div className="flex-[3] col-span-3 border overflow-hidden border-neutral-700 rounded-[8px]">
+                <div className="flex-[3] col-span-3 bg-neutral-900  bg-opacity-75 border overflow-hidden border-neutral-700 rounded-[8px]">
                   <div className="flex border-b bg-neutral-900 bg-opacity-75 border-neutral-700 items-center gap-1.5 py-1.5 p-2">
                     <div className="flex items-center opacity-70 gap-1.5">
                       <CgReadme size={16} />
@@ -159,7 +159,7 @@ export default function Page(context: any) {
                     dangerouslySetInnerHTML={{
                       __html: readmeData || "Loading...",
                     }}
-                    className={`p-6 bg-neutral-950 bg-opacity-75`}
+                    className={`p-6 pt-0`}
                   ></div>
                 </div>
                 <div className="h-full my-6 order-first lg:order-last col-span-1 lg:my-0 flex flex-col">
@@ -167,7 +167,7 @@ export default function Page(context: any) {
                     <div>
                       <span className="font-semibold">About</span>
                       <div className="text-sm pt-3">
-                        <span className="opacity-65">
+                        <span className="opacity-80">
                           {projectData?.description || "Loading..."}
                         </span>
                       </div>
@@ -183,6 +183,7 @@ export default function Page(context: any) {
                       </div>
                     </div>
                     <div>
+                      
                       <span className="font-semibold">Other people</span>
                       <div className="text-sm pt-3 flex flex-col gap-2.5">
                         {projectData?.people.map((person, index) => (

@@ -1,4 +1,6 @@
 import WorkCard from "@/components/workPage/WorkCard";
+import Link from "next/link";
+import { TbExternalLink } from "react-icons/tb";
 export default function Page() {
   return (
     <div className="noisy min-h-dvh">
@@ -17,6 +19,13 @@ export default function Page() {
       </div>
       <div className="max-w-7xl opacity-80 overflow-hidden mx-3 pb-16 grid-cols-1 xl:mx-auto mt-16 flex flex-col gap-2">
         <div className="flex flex-col gap-2">
+          <WorkCard
+            company="EyeHide"
+            title="EyeHide (Featured)"
+            timespan="November 2023 - Now"
+            id={6}
+            className="bg-yellow-500 text-yellow-950 shadow shadow-yellow-700"
+          />
           <div className="flex flex-col gap-2">
             <WorkCard
               company="VMware"
@@ -75,6 +84,29 @@ export default function Page() {
             id={5}
             className="lg:col-span-2 bg-sky-950 text-sky-500 border border-sky-500"
           />
+        </div>
+        <div className="relative overflow-hidden flex justify-between flex-col sm:flex-row items-start w-full mx-auto mt-10 p-4 border-2 rounded-xl bg-neutral-900">
+          <p className="text-3xl font-semibold sm:w-[65%]">
+            Liked what you saw? Get in contact!
+          </p>
+          <div className="sm:w-auto mt-10 sm:mt-0 flex-col sm:flex-row w-full flex items-center gap-2.5">
+            <Link
+              href={
+                "https://docs.google.com/document/d/1TFzYKCOe1yHOBwgH3D-bM3E2tIS8q77oXxmzzA0EVJE/edit?usp=sharing"
+              }
+              className={`hover:opacity-80 w-full justify-center flex items-center gap-2 px-3 py-1.5 rounded-[6px] outline outline-1 -outline-offset-1 outline-neutral-700 bg-neutral-800
+              `}
+            >
+              CV
+              <TbExternalLink />
+            </Link>
+            <Link
+              href={"/contacts"}
+              className={`bg-white w-full whitespace-nowrap text-center hover:underline text-black hover:opacity-80 flex items-center justify-center gap-2 px-3 py-1.5 rounded-[6px]`}
+            >
+              Contact me
+            </Link>
+          </div>
         </div>
       </div>
     </div>
