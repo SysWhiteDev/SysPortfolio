@@ -19,7 +19,7 @@ export default function Page() {
             >
               Email
             </h1>
-            <p className="text-sm">syswhite.commercial@gmail.com</p>
+            <p className="text-sm">commercial@syswhite.dev</p>
           </div>
         </Link>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">

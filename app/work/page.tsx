@@ -1,3 +1,4 @@
+import { TransitionLink } from "@/components/utils/TransitionLink";
 import WorkCard from "@/components/workPage/WorkCard";
 import Link from "next/link";
 import { TbExternalLink } from "react-icons/tb";
@@ -24,7 +25,7 @@ export default function Page() {
             title="EyeHide (Featured)"
             timespan="November 2023 - Now"
             id={6}
-            className="bg-yellow-500 text-yellow-950 shadow shadow-yellow-700"
+            className="bg-yellow-600 text-yellow-950 shadow shadow-yellow-700"
           />
           <div className="flex flex-col gap-2">
             <WorkCard
@@ -100,12 +101,12 @@ export default function Page() {
               CV
               <TbExternalLink />
             </Link>
-            <Link
+            <TransitionLink
               href={"/contacts"}
               className={`bg-white w-full whitespace-nowrap text-center hover:underline text-black hover:opacity-80 flex items-center justify-center gap-2 px-3 py-1.5 rounded-[6px]`}
             >
               Contact me
-            </Link>
+            </TransitionLink>
           </div>
         </div>
       </div>

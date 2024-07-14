@@ -15,6 +15,7 @@ import { unified } from "unified";
 import "./readme.css";
 import { BiConfused } from "react-icons/bi";
 import { TbExternalLink } from "react-icons/tb";
+import { TransitionLink } from "@/components/utils/TransitionLink";
 type ProjectData = {
   name: string;
   description: string;
@@ -79,14 +80,14 @@ export default function Page(context: any) {
               The project you are looking for doesn&apos;t exist.
             </p>
             <div className="pt-8">
-              <Link
+              <TransitionLink
                 href={"/work"}
                 className={`text-sm hover:opacity-80 flex items-center gap-2 px-3 py-1.5 rounded-[6px] bg-sky-950 border-sky-500 border
               `}
               >
                 <IoIosArrowBack />
                 Go back to project list
-              </Link>
+              </TransitionLink>
             </div>
           </div>
         </div>
@@ -177,12 +178,12 @@ export default function Page(context: any) {
                         CV
                         <TbExternalLink />
                       </Link>
-                      <Link
+                      <TransitionLink
                         href={"/contacts"}
                         className={`bg-white w-full whitespace-nowrap text-center hover:underline text-black hover:opacity-80 flex items-center justify-center gap-2 px-3 py-1.5 rounded-[6px]`}
                       >
                         Contact me
-                      </Link>
+                      </TransitionLink>
                     </div>
                   </div>
                 </div>

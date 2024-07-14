@@ -10,16 +10,17 @@ import {
 import "./style.css";
 import { TbExternalLink } from "react-icons/tb";
 import { usePathname } from "next/navigation";
+import { TransitionLink } from "../utils/TransitionLink";
 export default function Navbar() {
   const path = usePathname();
   return (
     <div className="flex z-50 fixed top-0 left-0 justify-center md:justify-between flex-col items-start">
       <nav className="w-6xl flex md:flex-none justify-center md:justify-between items-center px-2 py-2 rounded-[10px] shadow-sm bg-opacity-65 border bg-neutral-800  border-neutral-700 !mr-2 backdrop-blur-[4px] m-2 lg:mx-7 lg:m-6">
         <div className="link-wrap flex gap-2 items-center ">
-          <Link href={"/"} className={`${path === "/" ? "active " : ""}`}>
+          <TransitionLink href={"/"} className={`${path === "/" ? "active " : ""}`}>
             Home
-          </Link>
-          <Link
+          </TransitionLink>
+          <TransitionLink
             href={"/work"}
             className={`${
               path.includes("/work") ? "active " : ""
@@ -38,13 +39,13 @@ export default function Navbar() {
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
-          </Link>
-          <Link
+          </TransitionLink>
+          <TransitionLink
             href={"/contacts"}
             className={`${path === "/contacts" ? "active " : ""}`}
           >
             Contacts
-          </Link>
+          </TransitionLink>
           <Link
             href={
               "https://docs.google.com/document/d/1TFzYKCOe1yHOBwgH3D-bM3E2tIS8q77oXxmzzA0EVJE/edit?usp=sharing"
