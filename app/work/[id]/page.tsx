@@ -142,7 +142,7 @@ export default function Page(context: any) {
                   {projectData?.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className={`text-xs border bg-sky-950 text-sky-300 border-sky-500 px-2 py-0.5 rounded-full`}
+                      className={`text-xs border flex-shrink-0 bg-sky-950 text-sky-300 border-sky-500 px-2 py-0.5 rounded-full`}
                     >
                       {tag.text}
                     </span>
@@ -187,20 +187,20 @@ export default function Page(context: any) {
                     </div>
                   </div>
                 </div>
-                <div className="h-full my-6 order-first lg:order-last col-span-1 lg:my-0 flex flex-col">
-                  <div className="lg:sticky top-6 flex flex-col gap-12">
-                    <div>
+                <div className="h-full w-full my-6 order-first lg:order-last col-span-1 lg:my-0 flex flex-col">
+                  <div className="lg:sticky w-full top-6 flex flex-col gap-12">
+                    <div className="w-full">
                       <span className="font-semibold">About</span>
                       <div className="text-sm pt-3">
                         <span className="opacity-80">
                           {projectData?.description || "Loading..."}
                         </span>
                       </div>
-                      <div className="lg:hidden flex mt-3.5 items-center gap-1.5 pb-1 overflow-x-auto">
+                      <div className="lg:hidden flex mt-3.5 items-center w-full gap-1.5 pb-1 overflow-x-auto">
                         {projectData?.tags.map((tag, index) => (
                           <span
                             key={index}
-                            className={`text-xs border bg-sky-950 text-sky-300 border-sky-500 px-2 py-0.5 rounded-full`}
+                            className={`text-xs border bg-sky-950 flex-shrink-0 text-sky-300 border-sky-500 px-2 py-0.5 rounded-full`}
                           >
                             {tag.text}
                           </span>

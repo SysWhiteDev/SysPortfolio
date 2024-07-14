@@ -1,0 +1,37 @@
+{
+  "name": "TrashTracer",
+  "description": "An award-winning project that promotes recycling by utilizing large format displays and later on a mobile app to highlight top recyclers. ♻️",
+  "tags": [
+    {
+      "text": "NOI Hackathon",
+      "color": "red"
+    },
+    {
+      "text": "3 Awards",
+      "color": "red"
+    },
+    {
+      "text": "Requested discretion"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://github.com/trashtracer",
+      "type": "GitHub"
+    }
+  ],
+  "people": [
+    {
+      "name": "SysWhiteDev",
+      "role": "Frontend/Backend",
+      "avatar": "https://avatars.githubusercontent.com/u/76256827?s=48&v=4",
+      "url": "https://github.com/SysWhiteDev"
+    },
+    {
+      "name": "Resonance",
+      "role": "Backend",
+      "avatar": "https://avatars.githubusercontent.com/u/117764467?s=64&v=4",
+      "url": "https://github.com/resonanceee"
+    }
+  ]
+}

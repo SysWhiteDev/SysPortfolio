@@ -1,0 +1,34 @@
+{
+  "name": "WaveLab Station",
+  "description": "EV-Charger manager and footage analyzer for VMware. 🚗",
+  "tags": [
+    {
+      "text": "VMware",
+      "color": "red"
+    },
+    {
+      "text": "Requested discretion"
+    }
+  ],
+  "links": [],
+  "people": [
+    {
+      "name": "SysWhiteDev",
+      "role": "Frontend/Backend",
+      "avatar": "https://avatars.githubusercontent.com/u/76256827?s=48&v=4",
+      "url": "https://github.com/SysWhiteDev"
+    },
+    {
+      "name": "Resonance",
+      "role": "Backend",
+      "avatar": "https://avatars.githubusercontent.com/u/117764467?s=64&v=4",
+      "url": "https://github.com/resonanceee"
+    },
+    {
+      "name": "Hamza Jamil",
+      "role": "ML",
+      "avatar": "https://avatars.githubusercontent.com/u/47300606?v=4",
+      "url": "https://github.com/Hamza5955"
+    }
+  ]
+}
