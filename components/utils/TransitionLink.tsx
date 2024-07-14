@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { usePathname, useSearchParams } from "next/navigation";
 
@@ -19,7 +19,9 @@ export const TransitionLink = ({
   className,
   ...props
 }: TransitionLink): React.JSX.Element => {
-  const transitionElement = document.querySelector(".page-transition-element");
+  const [transitionElement, setTransitionElement] = useState<Element | null>(
+    null
+  );
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -29,12 +31,16 @@ export const TransitionLink = ({
     transitionElement?.classList.add("page-transition");
     setTimeout(() => {
       router.push(href);
-    }, 250);
+    }, 150);
   };
 
   useEffect(() => {
     transitionElement?.classList.remove("page-transition");
   }, [pathname, searchParams]);
+
+  useEffect(() => {
+    setTransitionElement(document.querySelector(".page-transition-element"));
+  }, []);
 
   return (
     <>

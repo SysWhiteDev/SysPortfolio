@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/navigation/Footer";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,13 +29,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="text-neutral-100">
-          <Navbar />
-          <div className="page-transition-element">
-            {children}
-            <Footer />
+        <Suspense>
+          <div className="text-neutral-100">
+            <Navbar />
+            <div className="page-transition-element">
+              {children}
+              <Footer />
+            </div>
           </div>
-        </div>
+        </Suspense>
       </body>
     </html>
   );

@@ -65,7 +65,7 @@ body {
 /* TRANSITIONS */
 
 .page-transition-element {
-  transition: opacity 250ms linear;
+  transition: opacity 150ms linear;
 }
 
 .page-transition {
