@@ -38,7 +38,7 @@ export default function Page() {
             <div className="flex flex-col lg:flex-row gap-2">
               <WorkCard
                 company="ACS Data System SPA"
-                title="Emissions dashboard"
+                title="ACS Emissions dashboard"
                 timespan="July 2023 - November 2023"
                 id={1}
                 className="bg-teal-700 text-teal-950 shadow shadow-teal-700"

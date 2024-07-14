@@ -1,0 +1,29 @@
+{
+  "name": "ACS Challenge 2023",
+  "description": "Dashboard for monitoring and analyzing automotive emissions data over time for ACS Data Systems S.p.A. 📈💡",
+  "tags": [
+    {
+      "text": "ACS Data Systems S.p.A."
+    }
+  ],
+  "links": [
+    {
+      "url": "https://github.com/SysWhiteDev/ACS-Challenge-2023",
+      "type": "GitHub"
+    }
+  ],
+  "people": [
+    {
+      "name": "SysWhiteDev",
+      "role": "Frontend",
+      "avatar": "https://avatars.githubusercontent.com/u/76256827?s=48&v=4",
+      "url": "https://github.com/SysWhiteDev"
+    },
+    {
+      "name": "Resonance",
+      "role": "General Help",
+      "avatar": "https://avatars.githubusercontent.com/u/117764467?s=64&v=4",
+      "url": "https://github.com/resonanceee"
+    }
+  ]
+}
