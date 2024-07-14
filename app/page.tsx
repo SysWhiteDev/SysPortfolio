@@ -74,7 +74,7 @@ export default async function Home() {
                 <div className="hover:text-yellow-400 hover:shadow-yellow-400 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                   <SiJavascript
                     size={70}
-                    className="opacity-90 rounded-[4px]"
+                    className="opacity-90 rounded-[3px]"
                   />
                   <p className="font-semibold text-lg">Javascript</p>
                 </div>

@@ -196,11 +196,11 @@ export default function Page(context: any) {
                           {projectData?.description || "Loading..."}
                         </span>
                       </div>
-                      <div className="lg:hidden flex mt-3.5 items-center w-full gap-1.5 pb-1 overflow-x-auto">
+                      <div className="lg:hidden w-full mt-3.5 items-center">
                         {projectData?.tags.map((tag, index) => (
                           <span
                             key={index}
-                            className={`text-xs border bg-sky-950 flex-shrink-0 text-sky-300 border-sky-500 px-2 py-0.5 rounded-full`}
+                            className={`text-xs inline-block mr-1 mb-0.5 border bg-sky-950 flex-shrink-0 text-sky-300 border-sky-500 px-2 py-0.5 rounded-full`}
                           >
                             {tag.text}
                           </span>

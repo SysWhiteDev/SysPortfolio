@@ -82,7 +82,7 @@ export default function Page() {
             company="OpenDataHub Bootcamp"
             title="Weather Component"
             timespan="2024"
-            id={6}
+            id={7}
             className="lg:col-span-2 bg-sky-950 text-sky-500 border border-sky-500"
           />
         </div>

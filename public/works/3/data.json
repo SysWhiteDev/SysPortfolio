@@ -1,0 +1,32 @@
+{
+  "name": "AEFFC",
+  "description": "Absolutely ethical and family friendly canvas. 🎨",
+  "tags": [
+    {
+      "text": "First Lego League"
+    },
+    {
+      "text": "1 Award"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://github.com/SysWhiteDev/AEFFC",
+      "type": "GitHub"
+    }
+  ],
+  "people": [
+    {
+      "name": "SysWhiteDev",
+      "role": "Creative Branch",
+      "avatar": "https://avatars.githubusercontent.com/u/76256827?s=48&v=4",
+      "url": "https://github.com/SysWhiteDev"
+    },
+    {
+      "name": "Resonance",
+      "role": "Robotics Branch",
+      "avatar": "https://avatars.githubusercontent.com/u/117764467?s=64&v=4",
+      "url": "https://github.com/resonanceee"
+    }
+  ]
+}

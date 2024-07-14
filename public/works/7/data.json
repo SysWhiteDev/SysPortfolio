@@ -1,0 +1,42 @@
+{
+  "name": "Weather Component",
+  "description": "The web component for the Open Data Hub created during the 2024 Bootcamp. 🌍",
+  "tags": [
+    {
+      "text": "ODH Bootcamp 2024"
+    },
+    {
+      "text": "1 Pseudo Award"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://weather.syswhite.dev",
+      "type": "Website"
+    },
+    {
+      "url": "https://github.com/SysWhiteDev/ODHWeatherComponent",
+      "type": "GitHub"
+    }
+  ],
+  "people": [
+    {
+      "name": "SysWhiteDev",
+      "role": "Weather Component",
+      "avatar": "https://avatars.githubusercontent.com/u/76256827?s=48&v=4",
+      "url": "https://github.com/SysWhiteDev"
+    },
+    {
+      "name": "Resonance",
+      "role": "General Help",
+      "avatar": "https://avatars.githubusercontent.com/u/117764467?s=64&v=4",
+      "url": "https://github.com/resonanceee"
+    },
+    {
+      "name": "Hamza Jamil",
+      "role": "General Help",
+      "avatar": "https://avatars.githubusercontent.com/u/47300606?v=4",
+      "url": "https://github.com/Hamza5955"
+    }
+  ]
+}
