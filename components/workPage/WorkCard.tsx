@@ -46,7 +46,7 @@ export default function WorkCard({
         onMouseMove={(e) => handleMouseMove(e)}
       >
         <div
-          className="w-[32px] hidden lg:flex workcard-mousediv opacity-0 group-hover:opacity-100 active:outline-offset-0 absolute justify-center items-center invisible group-hover:visible h-[32px] rounded-full mix-blend-difference bg-white outline-white outline-dashed outline-offset-[3px]"
+          className="w-[32px] hidden lg:flex workcard-mousediv opacity-0 group-hover:opacity-100 active:outline-offset-0 absolute justify-center items-center invisible group-hover:visible h-[32px] rounded-full mix-blend-difference bg-white outline-2 outline-white outline-dashed outline-offset-[3px]"
           ref={mouseDivRef}
         >
         </div>

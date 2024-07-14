@@ -30,8 +30,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="text-neutral-100">
           <Navbar />
-          {children}
-          <Footer />
+          <div className="page-transition-element">
+            {children}
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

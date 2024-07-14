@@ -34,6 +34,7 @@ import { SiExpress } from "react-icons/si";
 import { TbBrandPrisma } from "react-icons/tb";
 import Link from "next/link";
 import Image from "next/image";
+import { TransitionLink } from "@/components/utils/TransitionLink";
 const lora = Lora({ subsets: ["latin"] });
 
 export default async function Home() {
@@ -305,12 +306,12 @@ export default async function Home() {
             />
           </div>
           <div className="flex flex-row mt-6 items-center gap-1.5">
-            <Link
+            <TransitionLink
               href={"/work"}
               className={`bg-white w-full sm:w-auto text-center hover:underline text-black hover:opacity-80 flex items-center justify-center gap-2 px-3 py-1.5 rounded-[6px]`}
             >
               My work
-            </Link>
+            </TransitionLink>
           </div>
         </div>
       </div>

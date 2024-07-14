@@ -61,3 +61,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-blue-600;
 }
+
+/* TRANSITIONS */
+
+.page-transition-element {
+  transition: opacity 250ms linear;
+}
+
+.page-transition {
+  opacity: 0;
+}
