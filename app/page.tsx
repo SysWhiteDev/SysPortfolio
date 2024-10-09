@@ -91,21 +91,6 @@ export default async function Home() {
                   <p className="font-semibold text-lg">Python</p>
                 </div>
               </Link>
-              <Link href={"https://cplusplus.com/"} target="_blank">
-                <div className="hover:text-blue-600 hover:shadow-blue-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                  <SiCplusplus size={70} className="opacity-90" />
-                  <p className="font-semibold text-lg">C++</p>
-                </div>
-              </Link>
-              <Link
-                href={"https://dotnet.microsoft.com/en-us/languages/csharp"}
-                target="_blank"
-              >
-                <div className="hover:text-purple-600 hover:shadow-purple-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
-                  <SiCsharp size={70} className="opacity-90" />
-                  <p className="font-semibold text-lg">C#</p>
-                </div>
-              </Link>
               <Link href={"https://www.swift.org/"} target="_blank">
                 <div className="hover:text-orange-600 hover:shadow-orange-600 transition-all cursor-pointer shadow flex justify-center items-center gap-1 flex-col bg-neutral-800 shadow-black p-2 rounded-[8px]">
                   <SiSwift size={70} className="opacity-90" />
