@@ -45,7 +45,7 @@ export default async function Home() {
           <div className="-z-10 absolute top-0 bottom-0 left-0 right-0 w-full blur-[300px] mb-24 h-full">
             <div className="absolute bottom-0 top-2 h-[300px] w-[300px] bg-blue-500" />
           </div>
-          <div className="px-4  pt-[75px] lg:pt-[100px] md:px-10 flex-shrink-0 lg:px-12 flex justify-between items-start pb-5 md:pb-7 lg:pb-10 w-full flex-col lg:flex-row lg:items-end">
+          <div className="px-4 lg:px-12 max-w-[1920px]  pt-[75px] lg:pt-[100px] md:px-10 flex-shrink-0 flex justify-between items-start pb-5 md:pb-7 lg:pb-10 w-full flex-col lg:flex-row lg:items-end">
             <div>
               <span
                 className={`${lora.className} font-semibold text-5xl sm:text-6xl md:text-7xl xl:text-8xl text-left`}

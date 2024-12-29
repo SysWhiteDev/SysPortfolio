@@ -20,13 +20,6 @@ export default function Page() {
       </div>
       <div className="max-w-7xl opacity-80 overflow-hidden mx-3 pb-16 grid-cols-1 xl:mx-auto mt-16 flex flex-col gap-2">
         <div className="flex flex-col gap-2">
-          <WorkCard
-            company="EyeHide"
-            title="EyeHide (Featured)"
-            timespan="November 2023 - Now"
-            id={6}
-            className="bg-yellow-600 text-yellow-950 shadow shadow-yellow-700"
-          />
           <div className="flex flex-col gap-2">
             <WorkCard
               company="VMware"
@@ -84,6 +77,13 @@ export default function Page() {
             timespan="2024"
             id={7}
             className="lg:col-span-2 bg-sky-950 text-sky-500 border border-sky-500"
+          />
+          <WorkCard
+            company="EyeHide"
+            title="EyeHide"
+            timespan="November 2023 - Now"
+            id={6}
+            className="bg-sky-950 text-sky-500 border border-sky-500"
           />
         </div>
         <div className="relative overflow-hidden flex justify-between flex-col sm:flex-row items-start w-full mx-auto mt-16 p-4 border-2 rounded-xl bg-neutral-900">

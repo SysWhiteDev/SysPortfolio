@@ -9,7 +9,7 @@ export default function Page() {
       </div>
       <div className="max-w-7xl pt-[66px] lg:pt-[98px] w-full px-3 opacity-80 overflow-hidden pb-16 grid-cols-1 xl:mx-auto mt-16 flex flex-col gap-2">
         <Link
-          href={"mailto:syswhite.commercial@gmail.com"}
+          href={"mailto:commercial@syswhite.dev"}
           className={`bg-violet-950 h-[200px] transition-all text-violet-400 border bg-opacity-80 hover:bg-opacity-50 border-violet-500 relative overflow-x-hidden shadow p-4 rounded-[10px] row-span-3 first-line:backdrop:h-full flex w-full flex-col justify-between`}
         >
           <div className="flex text-sm gap-2 items-center"></div>
