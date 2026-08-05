@@ -37,7 +37,8 @@ type ProjectData = {
 };
 
 export default function Page(context: any) {
-  const id = context.params.id;
+  const params = React.use(context.params as Promise<{ id: string }>);
+  const id = params.id;
   const [projectData, setProjectData] = React.useState<ProjectData>();
   const [readmeData, setReadmeData] = React.useState<TrustedHTML>();
   const [error, setError] = React.useState<boolean>(false);

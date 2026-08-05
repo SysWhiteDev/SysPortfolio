@@ -7,7 +7,6 @@ import {
   SiCircleci,
   SiClerk,
   SiCplusplus,
-  SiCsharp,
   SiDocker,
   SiFirebase,
   SiGit,
