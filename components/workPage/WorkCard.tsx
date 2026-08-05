@@ -3,8 +3,7 @@ import React from "react";
 
 import { Lora } from "next/font/google";
 const lora = Lora({ subsets: ["latin"] });
-import { FaArrowRight, FaProjectDiagram } from "react-icons/fa";
-import Link from "next/link";
+import { FaProjectDiagram } from "react-icons/fa";
 import "./workcard.css";
 import { TransitionLink } from "../utils/TransitionLink";
 
