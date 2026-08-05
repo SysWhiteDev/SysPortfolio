@@ -23,8 +23,8 @@ export default function WorkCard({
   id,
   company,
 }: WorkCardType): React.JSX.Element {
-  const mouseDivRef = React.useRef<HTMLDivElement | any>();
-  const mouseContainerRef = React.useRef<HTMLDivElement | any>();
+  const mouseDivRef = React.useRef<HTMLDivElement | any>(undefined);
+  const mouseContainerRef = React.useRef<HTMLDivElement | any>(undefined);
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (mouseDivRef.current && mouseContainerRef.current) {
       const rect = mouseContainerRef.current.getBoundingClientRect();
@@ -38,7 +38,7 @@ export default function WorkCard({
  return (
     <TransitionLink
       href={`/work/${id}`}
-      className={`${className} relative lg:cursor-none overflow-x-hidden shadow p-4 rounded-[10px] row-span-3  min-h-[350px] first-line:backdrop:h-full flex w-full flex-col justify-between`}
+      className={`${className} relative lg:cursor-none overflow-x-hidden shadow p-4 rounded-[10px] row-span-3  min-h-[350px] backdrop:h-full flex w-full flex-col justify-between`}
     >
       <div
         ref={mouseContainerRef}
